@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projects", "projects", "{17245595-230B-9055-A944-863F0DDDA8E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cryptoMixer", "cryptoMixer", "{43F0CAAA-9ACB-BA78-533B-1787E6DC5317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C9822D9B-0C2F-A72F-55D7-D5AEEB016182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "projects\cryptoMixer\src\Shared\Shared.csproj", "{76FF13F3-5520-4CB2-4053-220DEAE4EDE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletManagementService", "projects\cryptoMixer\src\WalletManagementService\WalletManagementService.csproj", "{51C4771A-89C6-9044-A8D3-866969A2ABCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WmsTestHarness", "projects\cryptoMixer\src\WmsTestHarness\WmsTestHarness.csproj", "{995060F3-FBA1-250E-7120-904AB0550AD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76FF13F3-5520-4CB2-4053-220DEAE4EDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FF13F3-5520-4CB2-4053-220DEAE4EDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FF13F3-5520-4CB2-4053-220DEAE4EDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FF13F3-5520-4CB2-4053-220DEAE4EDE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C4771A-89C6-9044-A8D3-866969A2ABCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C4771A-89C6-9044-A8D3-866969A2ABCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C4771A-89C6-9044-A8D3-866969A2ABCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C4771A-89C6-9044-A8D3-866969A2ABCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995060F3-FBA1-250E-7120-904AB0550AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995060F3-FBA1-250E-7120-904AB0550AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995060F3-FBA1-250E-7120-904AB0550AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995060F3-FBA1-250E-7120-904AB0550AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43F0CAAA-9ACB-BA78-533B-1787E6DC5317} = {17245595-230B-9055-A944-863F0DDDA8E8}
+		{C9822D9B-0C2F-A72F-55D7-D5AEEB016182} = {43F0CAAA-9ACB-BA78-533B-1787E6DC5317}
+		{76FF13F3-5520-4CB2-4053-220DEAE4EDE6} = {C9822D9B-0C2F-A72F-55D7-D5AEEB016182}
+		{51C4771A-89C6-9044-A8D3-866969A2ABCC} = {C9822D9B-0C2F-A72F-55D7-D5AEEB016182}
+		{995060F3-FBA1-250E-7120-904AB0550AD2} = {C9822D9B-0C2F-A72F-55D7-D5AEEB016182}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E691BFC8-6D1C-47F8-9446-891E516BD3E5}
+	EndGlobalSection
+EndGlobal

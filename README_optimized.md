@@ -237,55 +237,55 @@ Tu peux faire ça dans **VS Code**, **Mammouth.ai**, **ChatGPT 5.1** (ou tout a
 Objectif : profiter d’APS OS dans VS Code **sans configuration compliquée**.
 
 1. **Crée un fichier de snippets utilisateur** (une seule fois)
-	 - Dans VS Code : `F1` → "Preferences: Configure User Snippets" → choisir `markdown.json`.  
-	 - Ajouter quelques entrées simples, par exemple :
+   - Dans VS Code : `F1` → "Preferences: Configure User Snippets" → choisir `markdown.json`.  
+   - Ajouter quelques entrées simples, par exemple :
 
-		 ```jsonc
-		 {
-			 "APS – Clarifier une demande": {
-				 "prefix": "aps_clarifier",
-				 "body": [
-					 "[RÔLE]",
-					 "Tu es mon APS (Assistant Personnel Stratégique).",
-					 "",
-					 "[TÂCHE]",
-					 "Clarifier et structurer ma demande pour qu’elle soit exploitable par mes autres personas (DGD, CPO, CTO, etc.).",
-					 "",
-					 "[ENTRÉE]",
-					 "« ${1:COLLER ICI MA DEMANDE BRUTE} »",
-					 "",
-					 "[SORTIE ATTENDUE]",
-					 "1) Résumé de ma demande en 3 phrases max.",
-					 "2) Objectifs explicites (liste).",
-					 "3) Ambiguïtés / points à clarifier.",
-					 "4) Personas / pôles à impliquer (ordre de priorité).",
-					 "5) Brief prêt-à-envoyer à mon DGD."
-				 ],
-				 "description": "Prompt APS pour clarifier et structurer une demande."
-			 },
-			 "APS – Plan d’action (DGD)": {
-				 "prefix": "aps_plan_action",
-				 "body": [
-					 "[RÔLE]",
-					 "Tu es mon DGD / Chief of Staff.",
-					 "",
-					 "[TÂCHE]",
-					 "Transformer la demande suivante en plan d’action opérationnel.",
-					 "",
-					 "[ENTRÉE]",
-					 "« ${1:DESCRIPTION DE CE QUE JE VEUX OBTENIR / DU PROBLÈME / DU PROJET} »",
-					 "",
-					 "[SORTIE ATTENDUE]",
-					 "1) Résumé de la situation.",
-					 "2) Objectif principal + 2–3 objectifs secondaires.",
-					 "3) Plan en étapes (3–7 actions) avec Qui / Quoi / Quand.",
-					 "4) Risques / points de vigilance.",
-					 "5) Messages prêts-à-coller pour les personas concernés."
-				 ],
-				 "description": "Prompt DGD pour transformer en plan d’action."
-			 }
-		 }
-		 ```
+     ```jsonc
+     {
+       "APS – Clarifier une demande": {
+         "prefix": "aps_clarifier",
+         "body": [
+           "[RÔLE]",
+           "Tu es mon APS (Assistant Personnel Stratégique).",
+           "",
+           "[TÂCHE]",
+           "Clarifier et structurer ma demande pour qu’elle soit exploitable par mes autres personas (DGD, CPO, CTO, etc.).",
+           "",
+           "[ENTRÉE]",
+           "« ${1:COLLER ICI MA DEMANDE BRUTE} »",
+           "",
+           "[SORTIE ATTENDUE]",
+           "1) Résumé de ma demande en 3 phrases max.",
+           "2) Objectifs explicites (liste).",
+           "3) Ambiguïtés / points à clarifier.",
+           "4) Personas / pôles à impliquer (ordre de priorité).",
+           "5) Brief prêt-à-envoyer à mon DGD."
+         ],
+         "description": "Prompt APS pour clarifier et structurer une demande."
+       },
+       "APS – Plan d’action (DGD)": {
+         "prefix": "aps_plan_action",
+         "body": [
+           "[RÔLE]",
+           "Tu es mon DGD / Chief of Staff.",
+           "",
+           "[TÂCHE]",
+           "Transformer la demande suivante en plan d’action opérationnel.",
+           "",
+           "[ENTRÉE]",
+           "« ${1:DESCRIPTION DE CE QUE JE VEUX OBTENIR / DU PROBLÈME / DU PROJET} »",
+           "",
+           "[SORTIE ATTENDUE]",
+           "1) Résumé de la situation.",
+           "2) Objectif principal + 2–3 objectifs secondaires.",
+           "3) Plan en étapes (3–7 actions) avec Qui / Quoi / Quand.",
+           "4) Risques / points de vigilance.",
+           "5) Messages prêts-à-coller pour les personas concernés."
+         ],
+         "description": "Prompt DGD pour transformer en plan d’action."
+       }
+     }
+     ```
 
 	 - Ensuite, dans n’importe quel fichier Markdown, tape `aps_clarifier` ou `aps_plan_action` → `Tab` pour insérer le prompt.
 
