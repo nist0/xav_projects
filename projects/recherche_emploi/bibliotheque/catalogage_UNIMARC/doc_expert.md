@@ -60,6 +60,38 @@ En SIGB, tu n’as pas toujours besoin de tout connaître par cœur, mais tu doi
 * savoir **où modifier une info** (ex. : erreur d’éditeur → zone 210) ;
 * comprendre la logique : **qui fait quoi**.
 
+### 2.1 Schéma visuel de la structure UNIMARC
+
+```mermaid
+graph TD
+  A[Notice UNIMARC] --> B[Zones de contrôle<br/>(00X)]
+  A --> C[Données codées<br/>(1XX)]
+  A --> D[Description bibliographique<br/>(2XX)]
+  A --> E[Collections & notes<br/>(225, 3XX, 5XX)]
+  A --> F[Accès matières<br/>(6XX)]
+  A --> G[Accès auteurs & titres liés<br/>(7XX)]
+  A --> H[Liens entre notices<br/>(4XX)]
+
+  C --> C1[100 – Données générales de traitement]
+  C --> C2[101 – Langue]
+  C --> C3[102 – Pays]
+
+  D --> D1[200 – Titre & responsabilité]
+  D --> D2[210 – Adresse (édition)]
+  D --> D3[215 – Description matérielle]
+  D --> D4[225 – Collection]
+
+  E --> E1[300 – Note générale]
+  E --> E2[327 – Note de contenu]
+  E --> E3[330 – Résumé]
+
+  F --> F1[606 – Accès matière]
+  F --> F2[686 – Classification (cote)]
+
+  G --> G1[700 – Auteur principal]
+  G --> G2[701/702 – Autres responsabilités]
+```
+
 ---
 
 ## 3. Les champs UNIMARC essentiels à maîtriser
