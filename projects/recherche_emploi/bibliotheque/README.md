@@ -9,6 +9,7 @@ Ce dossier regroupe tes fiches, exercices et documents de référence pour la pr
 - [`CV.template.md`](./CV.template.md) : modèle de CV orienté métiers du livre/bibliothèques.
 - [`entretien_avancé.md`](./entretien_avancé.md) : simulation d’entretien avancé (questions/réponses) pour préparer les oraux.
 - [`notions.md`](./notions.md) : synthèse des notions essentielles (SIGB, Dewey, UNIMARC, RAMEAU, médiation, etc.).
+- [`comparatif_bibliotheque_librairie.md`](./comparatif_bibliotheque_librairie.md) : comparatif entre travail en bibliothèque/médiathèque et en librairie/enseigne culturelle.
 
 ### Dossiers thématiques
 

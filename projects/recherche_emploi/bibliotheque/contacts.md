@@ -51,6 +51,7 @@
 | 11 | Médiathèque Trapèze | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 68 48 | ~7 km | 20–25 min |
 | 12 | Médiathèque de Puteaux | [puteaux.fr](https://www.puteaux.fr) | via site | ~4 km | 15–20 min |
 | 13 | Médiathèque de Suresnes | [suresnes.fr](https://www.suresnes.fr) | via site | ~3 km | 15–20 min |
+| 14 | Médiathèque Jacques Baumel (Rueil-Malmaison) | [mediatheque-rueilmalmaison.fr](https://mediatheque-rueilmalmaison.fr) | via site | ~5 km | 15–20 min |
 
 ---
 
@@ -103,3 +104,49 @@ Si tu veux, je peux aussi :
 🧭 faire **une carte Google Maps** de tous ces lieux
 
 Souhaites-tu l’une de ces options ?
+
+---
+
+## 🏬 Enseignes culturelles, librairies et autres structures proches
+
+> Structures où tes compétences "médiation documentaire / livres / accueil public" sont très valorisables (librairies, enseignes culturelles, centres de ressources…).
+
+### 🟦 Grandes enseignes culturelles / multimédia
+
+| # | Enseigne / Lieu | Site Web | Email / Tél. | Localisation approx. | Distance | Temps |
+|---|-----------------|----------|--------------|----------------------|----------|-------|
+| L1 | Fnac La Défense – Les 4 Temps | [fnac.com](https://www.fnac.com) | via site | Centre commercial Les 4 Temps | ~5 km | 15–20 min |
+| L2 | Fnac Paris – Ternes | [fnac.com](https://www.fnac.com) | via site | Paris 17e | ~9 km | 20–30 min |
+| L3 | Fnac Paris – Saint-Lazare | [fnac.com](https://www.fnac.com) | via site | Paris 8e | ~10 km | 20–30 min |
+| L4 | Fnac Paris – Montparnasse | [fnac.com](https://www.fnac.com) | via site | Paris 15e | ~12 km | 25–35 min |
+| L5 | Cultura La Défense / proche (selon implantation) | [cultura.com](https://www.cultura.com) | via site | Centre commercial / retail park | ~5–15 km | 20–35 min |
+| L6 | Espace culturel E. Leclerc (Ouest francilien) | [e-leclerc.com](https://www.e-leclerc.com) | via site | Hypermarché avec rayon culturel | ~10–20 km | 25–40 min |
+
+### 🟩 Grandes librairies parisiennes
+
+| # | Librairie | Site Web | Email / Tél. | Quartier | Distance | Temps |
+|---|-----------|----------|--------------|----------|----------|-------|
+| L7 | Gibert Joseph / Gibert Jeune | [gibert.com](https://www.gibert.com) | via site | Quartier Latin / Paris centre | ~12 km | 25–35 min |
+| L8 | Librairie La Procure | [laprocure.com](https://www.laprocure.com) | via site | Paris 6e | ~11 km | 25–35 min |
+| L9 | Librairie Ombres Blanches (Paris – si déplacement ponctuel) | [ombres-blanches.fr](https://www.ombres-blanches.fr) | via site | Paris / déplacement | variable | variable |
+| L10 | Librairie du Centre Pompidou | [centrepompidou.fr](https://www.centrepompidou.fr) | via site | Paris 4e | ~12 km | 25–35 min |
+| L11 | Librairie de la Cité des sciences | [universcience.fr](https://www.universcience.fr) | via site | Paris 19e | ~14 km | 30–40 min |
+
+### 🟨 Librairies et espaces culturels de proximité
+
+| # | Lieu | Site Web | Email / Tél. | Ville / Zone | Distance | Temps |
+|---|------|----------|--------------|--------------|----------|-------|
+| L12 | Librairie de Rueil-Malmaison (centre-ville) | [rueil-tourisme.com](https://www.rueil-tourisme.com) | via site / téléphone | Rueil-Malmaison centre | ~5 km | 15–20 min |
+| L13 | Librairie indépendante de Suresnes / Puteaux (centre-ville) | (selon enseigne) | via site / téléphone | Suresnes / Puteaux centre | ~3–5 km | 15–20 min |
+| L14 | Librairie de Courbevoie (centre-ville) | (selon enseigne) | via site / téléphone | Courbevoie centre | ~4–6 km | 15–25 min |
+| L15 | Librairie de Boulogne-Billancourt (quartier mairie) | (selon enseigne) | via site / téléphone | Boulogne-Billancourt | ~7–9 km | 20–30 min |
+
+### 🟪 Autres structures proches utiles
+
+| # | Structure | Site Web | Email / Tél. | Type | Distance | Temps |
+|---|----------|----------|--------------|------|----------|-------|
+| L16 | Librairie / boutique de musée (ex. Musée d'Orsay, Louvre, etc.) | [boutiquesdemusees.fr](https://www.boutiquesdemusees.fr) | via site | Librairie de musée | ~12–15 km | 25–40 min |
+| L17 | Librairie du Centre culturel irlandais / instituts culturels | [culturel-iris.org](https://www.centreculturelirlandais.com) | via site | Librairie / centre culturel | ~12 km | 25–35 min |
+| L18 | Espaces culturels de centres commerciaux (Les 4 Temps, So Ouest, etc.) | (selon enseigne) | via site | Rayon livres / culturel | ~5–12 km | 20–35 min |
+| L19 | Grandes surfaces avec rayon livres (Carrefour, Auchan, Leclerc) | (selon magasin) | via site | Rayon librairie | ~5–15 km | 15–35 min |
+| L20 | Librairies religieuses / spécialisées (Paris Ouest) | (selon enseigne) | via site / téléphone | Librairie spécialisée | ~8–15 km | 20–40 min |

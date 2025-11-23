@@ -10,9 +10,13 @@ Cette simulation inclut :
 * Questions pièges
 * Réponses recommandées
 
+Pour préparer spécifiquement la question « bibliothèques / médiathèques vs. librairies / enseignes culturelles », tu peux aussi relire :
+
+* [`comparatif_bibliotheque_librairie.md`](./comparatif_bibliotheque_librairie.md) : synthèse des différences de contexte et des compétences à mettre en avant.
+
 ---
 
-# 1. Présentation générale
+## 1. Présentation générale
 
 **Question :** « Pouvez-vous vous présenter en quelques minutes ? »
 **Réponse recommandée :** Présentation structurée : parcours → compétences clés → expérience bibliothèque → motivation.
@@ -22,7 +26,7 @@ Cette simulation inclut :
 
 ---
 
-# 2. Compétences métier : Dewey / UNIMARC / RAMEAU / SIGB
+## 2. Compétences métier : Dewey / UNIMARC / RAMEAU / SIGB
 
 ## 2.1. Classification Dewey
 
@@ -56,7 +60,7 @@ Cette simulation inclut :
 
 ---
 
-# 3. Accueil du public / gestion des conflits
+## 3. Accueil du public / gestion des conflits
 
 **Question :** « Comment gérez-vous un usager mécontent ? »
 **Réponse :** Écoute → reformulation → rappel règles → proposition solution.
@@ -66,7 +70,7 @@ Cette simulation inclut :
 
 ---
 
-# 4. Actions culturelles et médiation
+## 4. Actions culturelles et médiation
 
 **Question :** « Quelle action culturelle proposeriez-vous ? »
 **Réponse :** Ateliers numériques, lectures jeunesse, club de lecture, exposition.
@@ -76,14 +80,14 @@ Cette simulation inclut :
 
 ---
 
-# 5. Travail d’équipe et organisation
+## 5. Travail d’équipe et organisation
 
 **Question :** « Comment gérez-vous les priorités ? »
 **Réponse :** Méthode : urgences SIGB → service public → traitement documentaire → préparation animations.
 
 ---
 
-# 6. Questions pièges (avancé)
+## 6. Questions pièges (avancé)
 
 **Piège :** « Quel est votre principal défaut ? »
 → Réponse constructive + amélioration.
@@ -96,7 +100,7 @@ Cette simulation inclut :
 
 ---
 
-# 7. Conclusion et questions du candidat
+## 7. Conclusion et questions du candidat
 
 Préparer :
 
@@ -106,7 +110,7 @@ Préparer :
 
 ---
 
-# 8. ANNEXE — Ajout à la TODO LIST (pour réutilisation ultérieure)
+## 8. ANNEXE — Ajout à la TODO LIST (pour réutilisation ultérieure)
 
 ### 🔵 À FAIRE — Simulation
 
