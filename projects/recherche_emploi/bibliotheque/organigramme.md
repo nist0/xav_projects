@@ -8,11 +8,11 @@ Ce schéma te montre clairement comment les quatre éléments se relient entre e
 
 ```mermaid
 graph TD
-    A["SIGB\n(Système Intégré de Gestion de Bibliothèque)"] --> B["Notice UNIMARC\n(Format de catalogage)"]
-    B --> C["Dewey\n(Classification / Cote)\nZone 686"]
-    B --> D["RAMEAU\n(Indexation matière)\nZone 606"]
-    C --> E["Mise en rayon\n(Classement physique)"]
-    D --> F["Recherche thématique\n(OPAC / Catalogue)"]
+    A[SIGB – Système Intégré de Gestion de Bibliothèque] --> B[Notice UNIMARC – Format de catalogage]
+    B --> C[Dewey – Classification / Cote – Zone 686]
+    B --> D[RAMEAU – Indexation matière – Zone 606]
+    C --> E[Mise en rayon – Classement physique]
+    D --> F[Recherche thématique – OPAC / Catalogue]
 ```
 
 ---
