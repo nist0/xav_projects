@@ -67,16 +67,16 @@ graph TD
   A[Notice UNIMARC] --> B[Zones de contrôle (00X)]
   A --> C[Données codées (1XX)]
   A --> D[Description bibliographique (2XX)]
-  A --> E[Collections & notes (225, 3XX, 5XX)]
+  A --> E[Collections et notes (225, 3XX, 5XX)]
   A --> F[Accès matières (6XX)]
-  A --> G[Accès auteurs & titres liés (7XX)]
+  A --> G[Accès auteurs et titres liés (7XX)]
   A --> H[Liens entre notices (4XX)]
 
   C --> C1[100 – Données générales de traitement]
   C --> C2[101 – Langue]
   C --> C3[102 – Pays]
 
-  D --> D1[200 – Titre & responsabilité]
+  D --> D1[200 – Titre et responsabilité]
   D --> D2[210 – Adresse (édition)]
   D --> D3[215 – Description matérielle]
   D --> D4[225 – Collection]
@@ -89,7 +89,7 @@ graph TD
   F --> F2[686 – Classification (cote)]
 
   G --> G1[700 – Auteur principal]
-  G --> G2[701/702 – Autres responsabilités]
+  G --> G2[701 et 702 – Autres responsabilités]
 ```
 
 ---
