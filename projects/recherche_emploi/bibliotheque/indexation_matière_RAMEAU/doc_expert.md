@@ -296,3 +296,13 @@ Exemples courants :
 ---
 
 Document conçu pour te donner une maîtrise complète et professionnelle de l’indexation RAMEAU.
+
+---
+
+## Liens pour approfondir
+
+* [Wikipédia – RAMEAU](https://fr.wikipedia.org/wiki/RAMEAU_(catalogage))
+* [BnF – RAMEAU, langage d’indexation](https://www.bnf.fr/fr/rameau)
+* [Accès aux données BnF (dont autorités RAMEAU)](https://data.bnf.fr/)
+* [Abes – autorités matière et RAMEAU dans le SUDOC](https://www.abes.fr/)
+* Rechercher « tutoriel indexation RAMEAU PDF » pour trouver des supports d’exercices détaillés.

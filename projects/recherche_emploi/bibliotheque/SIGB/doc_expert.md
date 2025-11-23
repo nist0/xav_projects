@@ -180,3 +180,13 @@ Formulations professionnelles :
 ---
 
 Ce document constitue une base complète pour comprendre, expliquer et utiliser un SIGB en environnement professionnel.
+
+---
+
+## Liens pour approfondir
+
+* [Wikipédia – Système intégré de gestion de bibliothèque](https://fr.wikipedia.org/wiki/Syst%C3%A8me_int%C3%A9gr%C3%A9_de_gestion_de_biblioth%C3%A8que)
+* [Wikipédia – Koha (logiciel de SIGB libre)](https://fr.wikipedia.org/wiki/Koha_(logiciel))
+* [Wikipédia – PMB (logiciel de SIGB libre)](https://fr.wikipedia.org/wiki/PMB_(logiciel))
+* [Documentation communautaire Koha](https://koha-community.org/documentation/)
+* [Site de PMB (documentation et démos)](https://www.sigb.net/)

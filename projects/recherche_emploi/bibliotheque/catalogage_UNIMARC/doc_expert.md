@@ -323,3 +323,13 @@ En suivant ce document, tu as une base solide pour :
 * comprendre le catalogage UNIMARC ;
 * parler comme quelqu’un qui le pratique vraiment ;
 * être rapidement opérationnelle en poste dans une médiathèque ou bibliothèque.
+
+---
+
+## Liens pour approfondir
+
+* [Wikipédia – UNIMARC](https://fr.wikipedia.org/wiki/UNIMARC)
+* [IFLA – UNIMARC (en anglais)](https://www.ifla.org/unimarc/)
+* [Abes – documentation sur les formats et autorités (SUDOC)](https://www.abes.fr/)
+* [BnF – Catalogage et formats MARC](https://www.bnf.fr/fr/catalogage-et-formats)
+* Rechercher « guide catalogage UNIMARC PDF » pour trouver un manuel de pratique proche de ton environnement de travail.
