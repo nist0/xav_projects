@@ -1,0 +1,7 @@
+# Ignore environment-specific and sensitive config
+appsettings.Development.json
+.env.local
+
+# Ignore build output directories
+**/bin/
+**/obj/
