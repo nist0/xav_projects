@@ -1,4 +1,4 @@
-# FICHE MÉMO A4 – Indexation matière RAMEAU
+# Fiche mémo A4 – indexation matière RAMEAU
 
 Document synthétique pour indexer correctement et rapidement avec le vocabulaire contrôlé RAMEAU.
 
@@ -10,7 +10,7 @@ Identifier les sujets principaux d’un document et sélectionner les vedettes R
 
 ---
 
-# 1. Structure d’une vedette RAMEAU
+## 1. Structure d’une vedette RAMEAU
 
 Une vedette peut comporter :
 
@@ -25,7 +25,7 @@ Une vedette peut comporter :
 
 ---
 
-# 2. Procédure rapide d’indexation
+## 2. Procédure rapide d’indexation
 
 1. Lire titre + 4ᵉ + introduction.
 2. Identifier les **concepts principaux** (2 à 5 max).
@@ -36,7 +36,7 @@ Une vedette peut comporter :
 
 ---
 
-# 3. Types de vedettes
+## 3. Types de vedettes
 
 * **Nom commun** (thème) : Ex. `Stress (psychologie)`
 * **Nom propre** (personnes, collectivités) : Ex. `Arendt, Hannah`
@@ -46,7 +46,7 @@ Une vedette peut comporter :
 
 ---
 
-# 4. Subdivisions usuelles
+## 4. Subdivisions usuelles
 
 * `$x` Aspects psychologiques, sociaux, histoire, philosophie, enseignement
 * `$y` Antiquité, Moyen Âge, 19e siècle, 20e siècle...
@@ -55,7 +55,7 @@ Une vedette peut comporter :
 
 ---
 
-# 5. Exemples rapides
+## 5. Exemples rapides
 
 * Livre sur les abeilles → `Abeilles`
 * Livre sur l’écologie politique → `Écologie$xPolitique et gouvernement`
@@ -64,7 +64,7 @@ Une vedette peut comporter :
 
 ---
 
-# 6. Erreurs fréquentes
+## 6. Erreurs fréquentes
 
 * Inventer une vedette → toujours vérifier forme autorisée.
 * Empiler trop de subdivisions.
@@ -72,7 +72,7 @@ Une vedette peut comporter :
 
 ---
 
-# 7. Bonnes pratiques
+## 7. Bonnes pratiques
 
 * Utiliser le site RAMEAU ou le SUDOC.
 * Vérifier les renvois « Employer pour / Voir ».

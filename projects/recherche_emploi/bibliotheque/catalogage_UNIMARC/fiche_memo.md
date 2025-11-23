@@ -1,4 +1,4 @@
-# FICHE MÉMO A4 – Catalogage UNIMARC
+# Fiche mémo A4 – catalogage UNIMARC
 
 Document synthétique pour réviser et cataloguer efficacement.
 
@@ -10,7 +10,7 @@ Comprendre et utiliser rapidement les zones essentielles du format **UNIMARC** p
 
 ---
 
-# 1. Structure générale d’une notice UNIMARC
+## 1. Structure générale d’une notice UNIMARC
 
 Une notice comprend :
 
@@ -24,7 +24,7 @@ Une notice comprend :
 
 ---
 
-# 2. Zones essentielles à connaître
+## 2. Zones essentielles à connaître
 
 ## 🔵 Zones de contrôle
 
@@ -62,7 +62,7 @@ Une notice comprend :
 
 ---
 
-# 3. Zones de notes (3XX / 5XX)
+## 3. Zones de notes (3XX / 5XX)
 
 **300** Note générale.
 **327** Note de contenu.
@@ -70,31 +70,31 @@ Une notice comprend :
 
 ---
 
-# 4. Zones d’indexation (6XX)
+## 4. Zones d’indexation (6XX)
 
 **606** Sujet (nom commun) → `$a` sujet, `$x` subdivision.
 **686** Classification (ex. Dewey) → `$a` cote.
 
 ---
 
-# 5. Zones d’auteur (7XX)
+## 5. Zones d’auteur (7XX)
 
 **700** Auteur principal.
 **701 / 702** Co-auteurs, préfaciers, illustrateurs.
 
 ---
 
-# 6. Méthode rapide pour cataloguer
+## 6. Méthode rapide pour cataloguer
 
-## Étape 1 — Identifier les éléments bibliographiques
+### Étape 1 — Identifier les éléments bibliographiques
 
 Titre, auteur, éditeur, date, pages, ISBN.
 
-## Étape 2 — Vérifier l’existence d’une notice
+### Étape 2 — Vérifier l’existence d’une notice
 
 SUDOC, BnF, réseau local.
 
-## Étape 3 — Compléter ou modifier les zones
+### Étape 3 — Compléter ou modifier les zones
 
 * 200 → titre / auteur
 * 210 → éditeur / date
@@ -102,7 +102,7 @@ SUDOC, BnF, réseau local.
 * 330 → résumé
 * 606 / 686 → matières / cote
 
-## Étape 4 — Contrôler la cohérence
+### Étape 4 — Contrôler la cohérence
 
 * ISBN correct ?
 * Date cohérente avec l’éditeur ?
@@ -110,7 +110,7 @@ SUDOC, BnF, réseau local.
 
 ---
 
-# 7. Exemple ultra-simple de notice
+## 7. Exemple ultra-simple de notice
 
 ```
 010 ##$a9782070463886
@@ -127,7 +127,7 @@ SUDOC, BnF, réseau local.
 
 ---
 
-# 8. Erreurs fréquentes à éviter
+## 8. Erreurs fréquentes à éviter
 
 * Confondre `$a` titre propre et `$e` complément du titre.
 * Oublier la zone 330 (résumé visible par les usagers).
@@ -136,7 +136,7 @@ SUDOC, BnF, réseau local.
 
 ---
 
-# 9. Bonnes pratiques professionnelles
+## 9. Bonnes pratiques professionnelles
 
 * Importer les notices quand c’est possible.
 * Toujours vérifier ISBN, auteur, éditeur.

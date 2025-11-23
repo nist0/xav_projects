@@ -1,4 +1,4 @@
-# FICHE MÉMO A4 – Classification Décimale Dewey (CDD)
+# Fiche mémo A4 – classification décimale Dewey (CDD)
 
 Document synthétique pour réviser rapidement et coter efficacement.
 
@@ -10,7 +10,7 @@ Avoir une vision claire, rapide et opérationnelle de la classification Dewey po
 
 ---
 
-# 1. Les 10 classes principales
+## 1. Les 10 classes principales
 
 **000** Généralités
 **100** Philosophie, psychologie
@@ -25,30 +25,30 @@ Avoir une vision claire, rapide et opérationnelle de la classification Dewey po
 
 ---
 
-# 2. Méthode rapide pour coter
+## 2. Méthode rapide pour coter
 
-## Étape 1 — Identifier le sujet principal
+### Étape 1 — Identifier le sujet principal
 
 * Lire titre + sous-titre + 4e de couverture.
 * Ne pas mélanger thèmes secondaires.
 
-## Étape 2 — Trouver la classe Dewey
+### Étape 2 — Trouver la classe Dewey
 
 * Utiliser les tableaux ou index.
 * Comparer les classes voisines.
 
-## Étape 3 — Ajuster la précision
+### Étape 3 — Ajuster la précision
 
 * Ajouter des décimales si nécessaire.
 * Adapter au niveau de précision de la bibliothèque.
 
-## Étape 4 — Ajouter les 3 premières lettres du titre/auteur (si politique locale)
+### Étape 4 — Ajouter les 3 premières lettres du titre/auteur (si politique locale)
 
 Ex. : 152.46 ANX
 
 ---
 
-# 3. Exemples de cotation
+## 3. Exemples de cotation
 
 * Psychologie des émotions → **152.4**
 * Apprendre Python → **005.133**
@@ -58,7 +58,7 @@ Ex. : 152.46 ANX
 
 ---
 
-# 4. Erreurs fréquentes à éviter
+## 4. Erreurs fréquentes à éviter
 
 * Coter trop large (ex. mettre 150 au lieu de 152.4).
 * Coter sur un thème secondaire.
@@ -66,7 +66,7 @@ Ex. : 152.46 ANX
 
 ---
 
-# 5. Bons réflexes de professionnelle
+## 5. Bons réflexes de professionnelle
 
 * Vérifier cohérence des classes voisines.
 * Regarder d’autres notices (BnF, SUDOC, réseaux locaux).
@@ -75,7 +75,7 @@ Ex. : 152.46 ANX
 
 ---
 
-# 6. Raccourcis utiles
+## 6. Raccourcis utiles
 
 * Science = 500
 * Médecine = 610
@@ -87,7 +87,7 @@ Ex. : 152.46 ANX
 
 ---
 
-# 7. Classes Dewey en résumé
+## 7. Classes Dewey en résumé
 
 000 Généralités
 100 Philosophie / Psychologie
