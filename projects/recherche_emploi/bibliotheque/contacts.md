@@ -3,18 +3,23 @@
 > Adresse de départ : 85 avenue Vladimir Ilitch Lénine, Nanterre  
 > Distance et temps en transports : estimation moyenne
 
+**Légende priorité** :  
+- `1` = priorité forte (cibles à travailler en premier)  
+- `2` = priorité moyenne (à activer après / en parallèle)  
+- `3` = priorité basse / plus aléatoire à court terme
+
 ---
 
 ## 🏛️ 1. Établissements PRESTIGE (6)
 
-| #P | Établissement | Site Web | Email / Tél. | Distance approx. | Temps transport |
-|----|---------------|----------|--------------|------------------|-----------------|
-| P1 | Bibliothèque nationale de France (BNF) – François-Mitterrand | [Site de la BNF](https://www.bnf.fr) | [recrutement@bnf.fr](mailto:recrutement@bnf.fr) • 01 53 79 53 79 | ~13 km | ~35–40 min |
-| P2 | BNF – Richelieu | [Site de la BNF](https://www.bnf.fr) | contact via formulaire | ~13 km | ~40 min |
-| P3 | Bibliothèque Sainte-Geneviève | [Site de la bibliothèque Sainte-Geneviève](https://www.bsge.fr) | (contact via site) | ~12 km | ~35 min |
-| P4 | Médiathèque Valentin Haüy | [Site de l'association Valentin Haüy](https://www.avh.asso.fr) | [mediatheque@avh.asso.fr](mailto:mediatheque@avh.asso.fr) • 01 44 49 27 28 | ~11 km | ~35–40 min |
-| P5 | Réseau des médiathèques Vallée Sud (Clamart, Châtenay, Malakoff, Bagneux, etc.) | [Réseau Vallée Sud Médiathèques](https://mediatheques.valleesud.fr) | contact via site | 8–15 km | 20–40 min |
-| P6 | Réseau Bib92 – Hauts-de-Seine | [Réseau Bib92](https://www.bib92.org) | contact via site | variable | variable |
+| #P | Établissement | Site Web | Email / Tél. | Distance approx. | Temps transport | Priorité |
+|----|---------------|----------|--------------|------------------|-----------------|----------|
+| P1 | Bibliothèque nationale de France (BNF) – François-Mitterrand | [Site de la BNF](https://www.bnf.fr) | [recrutement@bnf.fr](mailto:recrutement@bnf.fr) • 01 53 79 53 79 | ~13 km | ~35–40 min | 3 |
+| P2 | BNF – Richelieu | [Site de la BNF](https://www.bnf.fr) | contact via formulaire | ~13 km | ~40 min | 3 |
+| P3 | Bibliothèque Sainte-Geneviève | [Site de la bibliothèque Sainte-Geneviève](https://www.bsge.fr) | (contact via site) | ~12 km | ~35 min | 3 |
+| P4 | Médiathèque Valentin Haüy | [Site de l'association Valentin Haüy](https://www.avh.asso.fr) | [mediatheque@avh.asso.fr](mailto:mediatheque@avh.asso.fr) • 01 44 49 27 28 | ~11 km | ~35–40 min | 3 |
+| P5 | Réseau des médiathèques Vallée Sud (Clamart, Châtenay, Malakoff, Bagneux, etc.) | [Réseau Vallée Sud Médiathèques](https://mediatheques.valleesud.fr) | contact via site | 8–15 km | 20–40 min | 2 |
+| P6 | Réseau Bib92 – Hauts-de-Seine | [Réseau Bib92](https://www.bib92.org) | contact via site | variable | variable | 3 |
 
 ---
 
@@ -22,69 +27,69 @@
 
 ### 🟦 Secteur Nanterre (proximité immédiate)
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 1 | Médiathèque du Petit Nanterre | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | 01 47 86 90 89 | ~2 km | 10–15 min |
-| 2 | Médiathèque Flora Tristan | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | 01 47 29 51 57 | ~2 km | 10–15 min |
-| 3 | Médiathèque Nanterre-Centre | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | via site | ~1.5 km | 10–12 min |
-| 4 | Médiathèque Universitaire Paris Nanterre (BU) | [bu.parisnanterre.fr](https://bu.parisnanterre.fr) | via site | ~2 km | 10 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 1 | Médiathèque du Petit Nanterre | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | 01 47 86 90 89 | ~2 km | 10–15 min | 1 |
+| 2 | Médiathèque Flora Tristan | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | 01 47 29 51 57 | ~2 km | 10–15 min | 1 |
+| 3 | Médiathèque Nanterre-Centre | [mediatheques-nanterre.fr](https://www.mediatheques-nanterre.fr) | via site | ~1.5 km | 10–12 min | 1 |
+| 4 | Médiathèque Universitaire Paris Nanterre (BU) | [bu.parisnanterre.fr](https://bu.parisnanterre.fr) | via site | ~2 km | 10 min | 1 |
 
 ---
 
 ### 🟩 Secteur Colombes / Asnières / Bois-Colombes
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 5 | Médiathèque Françoise Giroud (Colombes) | [Médiathèques de Colombes](https://mediatheques.colombes.fr) | [mediatheques@mairie-colombes.fr](mailto:mediatheques@mairie-colombes.fr) • 01 47 80 57 38 | ~4 km | 15–20 min |
-| 6 | Médiathèque municipale de Colombes (réseau) | [Médiathèques de Colombes](https://mediatheques.colombes.fr) | [mediatheques@mairie-colombes.fr](mailto:mediatheques@mairie-colombes.fr) | ~4–6 km | 15–25 min |
-| 7 | Médiathèque d’Asnières-sur-Seine | [asnieres-sur-seine.fr](https://asnieres-sur-seine.fr) | 01 41 11 12 55 | ~5 km | 15–20 min |
-| 8 | Médiathèque de Bois-Colombes | [bois-colombes.fr](https://www.bois-colombes.fr) | via site | ~4 km | 15–20 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 5 | Médiathèque Françoise Giroud (Colombes) | [Médiathèques de Colombes](https://mediatheques.colombes.fr) | [mediatheques@mairie-colombes.fr](mailto:mediatheques@mairie-colombes.fr) • 01 47 80 57 38 | ~4 km | 15–20 min | 2 |
+| 6 | Médiathèque municipale de Colombes (réseau) | [Médiathèques de Colombes](https://mediatheques.colombes.fr) | [mediatheques@mairie-colombes.fr](mailto:mediatheques@mairie-colombes.fr) | ~4–6 km | 15–25 min | 2 |
+| 7 | Médiathèque d’Asnières-sur-Seine | [asnieres-sur-seine.fr](https://asnieres-sur-seine.fr) | 01 41 11 12 55 | ~5 km | 15–20 min | 2 |
+| 8 | Médiathèque de Bois-Colombes | [bois-colombes.fr](https://www.bois-colombes.fr) | via site | ~4 km | 15–20 min | 2 |
 
 ---
 
 ### 🟧 Secteur Boulogne-Billancourt / Suresnes / Puteaux
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 9 | Médiathèque Landowski – Boulogne | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 55 65 | ~7 km | 20–25 min |
-| 10 | Médiathèque Billancourt | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 46 38 | ~7 km | 20–25 min |
-| 11 | Médiathèque Trapèze | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 68 48 | ~7 km | 20–25 min |
-| 12 | Médiathèque de Puteaux | [puteaux.fr](https://www.puteaux.fr) | via site | ~4 km | 15–20 min |
-| 13 | Médiathèque de Suresnes | [suresnes.fr](https://www.suresnes.fr) | via site | ~3 km | 15–20 min |
-| 14 | Médiathèque Jacques Baumel (Rueil-Malmaison) | [mediatheque-rueilmalmaison.fr](https://mediatheque-rueilmalmaison.fr) | via site | ~5 km | 15–20 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 9 | Médiathèque Landowski – Boulogne | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 55 65 | ~7 km | 20–25 min | 2 |
+| 10 | Médiathèque Billancourt | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 46 38 | ~7 km | 20–25 min | 2 |
+| 11 | Médiathèque Trapèze | [mediatheques.boulognebillancourt.com](https://mediatheques.boulognebillancourt.com) | 01 55 18 68 48 | ~7 km | 20–25 min | 2 |
+| 12 | Médiathèque de Puteaux | [puteaux.fr](https://www.puteaux.fr) | via site | ~4 km | 15–20 min | 1 |
+| 13 | Médiathèque de Suresnes | [suresnes.fr](https://www.suresnes.fr) | via site | ~3 km | 15–20 min | 1 |
+| 14 | Médiathèque Jacques Baumel (Rueil-Malmaison) | [mediatheque-rueilmalmaison.fr](https://mediatheque-rueilmalmaison.fr) | via site | ~5 km | 15–20 min | 1 |
 
 ---
 
 ### 🟨 Secteur Vallée Sud Grand Paris (Clamart / Malakoff / Bagneux / Fontenay)
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 14 | Médiathèque de Clamart | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | via site | ~10 km | 25–35 min |
-| 15 | Médiathèque de Fontenay-aux-Roses | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 13 10 | ~9 km | 25–30 min |
-| 16 | Médiathèque de Malakoff | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 14 80 | ~9 km | 25–30 min |
-| 17 | Médiathèque de Bagneux | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 14 69 | ~11 km | 30–35 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 14 | Médiathèque de Clamart | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | via site | ~10 km | 25–35 min | 2 |
+| 15 | Médiathèque de Fontenay-aux-Roses | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 13 10 | ~9 km | 25–30 min | 2 |
+| 16 | Médiathèque de Malakoff | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 14 80 | ~9 km | 25–30 min | 2 |
+| 17 | Médiathèque de Bagneux | [mediatheques.valleesud.fr](https://mediatheques.valleesud.fr) | 01 86 63 14 69 | ~11 km | 30–35 min | 2 |
 
 ---
 
 ### 🟥 Secteur Paris (bibliothèques de quartier)
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 18 | Médiathèque Jean-Pierre Melville (Paris 13) | (page Wikipédia) | via site Paris bibliothèques | ~14 km | 30–35 min |
-| 19 | Bibliothèque Boutron (Paris 10) | [bibliotheques.paris.fr](https://bibliotheques.paris.fr) | via site | ~10 km | 30 min |
-| 20 | Bibliothèque André Malraux (Paris 6) | [bibliotheques.paris.fr](https://bibliotheques.paris.fr) | via site | ~11 km | 30–35 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 18 | Médiathèque Jean-Pierre Melville (Paris 13) | (page Wikipédia) | via site Paris bibliothèques | ~14 km | 30–35 min | 3 |
+| 19 | Bibliothèque Boutron (Paris 10) | [bibliotheques.paris.fr](https://bibliotheques.paris.fr) | via site | ~10 km | 30 min | 3 |
+| 20 | Bibliothèque André Malraux (Paris 6) | [bibliotheques.paris.fr](https://bibliotheques.paris.fr) | via site | ~11 km | 30–35 min | 3 |
 
 ---
 
 ### 🟪 Autres structures utiles proches
 
-| # | Établissement | Site Web | Email/Tél. | Distance | Temps |
-|---|---------------|----------|------------|----------|-------|
-| 21 | Bibliothèque André Desguine (92) | [Bibliothèques des Hauts-de-Seine](https://bibliotheques.hauts-de-seine.fr) | [bibliotheque-desguine@hauts-de-seine.fr](mailto:bibliotheque-desguine@hauts-de-seine.fr) | ~8 km | 20–25 min |
-| 22 | Médiathèque Val d’Argenteuil (95) | [mairie-argenteuil.fr](https://www.mairie-argenteuil.fr) | via site | ~13 km | 30–35 min |
-| 23 | Médiathèque d’Argenteuil – réseau | [mairie-argenteuil.fr](https://www.mairie-argenteuil.fr) | via site | ~12–15 km | ~35 min |
-| 24 | Centre documentaire MGEN Paris Ouest | [mgen.fr](https://www.mgen.fr) | via contact | ~10 km | 30 min |
-| 25 | Médiathèque de Carrières-sur-Seine | [carrieres-sur-seine.fr](https://www.carrieres-sur-seine.fr) | via site | ~5 km | 15–20 min |
+| # | Établissement | Site Web | Email/Tél. | Distance | Temps | Priorité |
+|---|---------------|----------|------------|----------|-------|----------|
+| 21 | Bibliothèque André Desguine (92) | [Bibliothèques des Hauts-de-Seine](https://bibliotheques.hauts-de-seine.fr) | [bibliotheque-desguine@hauts-de-seine.fr](mailto:bibliotheque-desguine@hauts-de-seine.fr) | ~8 km | 20–25 min | 2 |
+| 22 | Médiathèque Val d’Argenteuil (95) | [mairie-argenteuil.fr](https://www.mairie-argenteuil.fr) | via site | ~13 km | 30–35 min | 2 |
+| 23 | Médiathèque d’Argenteuil – réseau | [mairie-argenteuil.fr](https://www.mairie-argenteuil.fr) | via site | ~12–15 km | ~35 min | 2 |
+| 24 | Centre documentaire MGEN Paris Ouest | [mgen.fr](https://www.mgen.fr) | via contact | ~10 km | 30 min | 2 |
+| 25 | Médiathèque de Carrières-sur-Seine | [carrieres-sur-seine.fr](https://www.carrieres-sur-seine.fr) | via site | ~5 km | 15–20 min | 1 |
 
 ---
 
