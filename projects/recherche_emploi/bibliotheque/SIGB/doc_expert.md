@@ -159,6 +159,65 @@ Un SIGB est organisé en plusieurs modules :
 
 ---
 
+## 4.b Plan d’auto-formation spécial PMB / Koha / Orphée
+
+### Objectif
+
+Être capable de dire en entretien :
+
+* « Je sais utiliser un SIGB libre (PMB/Koha) pour cataloguer, gérer les prêts et faire des recherches. »
+* « Je comprends la logique d’Orphée et je peux m’y adapter rapidement en situation de travail. »
+
+### Étape 1 – PMB : ton terrain d’entraînement principal
+
+1. Ouvrir une **démo PMB** (ou instance de test) à partir des liens en haut du document.
+2. T’entraîner à réaliser les opérations suivantes :
+   * créer une **notice simple** (titre, auteur, éditeur, date, résumé) ;
+   * ajouter un **exemplaire** avec cote, localisation et statut ;
+   * faire un **prêt** et un **retour** sur un lecteur de test ;
+   * faire une **recherche simple** par auteur, titre, sujet ;
+   * tester une **recherche avancée** (par année, type de document, etc.).
+3. Noter dans un carnet ou dans ce dossier :
+   * noms des **menus** utilisés ;
+   * ordre des **étapes** pour cataloguer / prêter / réserver ;
+   * 2–3 points que tu trouves pratiques dans PMB.
+
+### Étape 2 – Koha : observer et reproduire les mêmes gestes
+
+1. Aller sur une **démo Koha** (par exemple la démo ByWater ou autre démo publique).
+2. Repérer les modules équivalents à PMB :
+   * catalogage (notices),
+   * circulation (prêts/retours),
+   * usagers,
+   * OPAC.
+3. Refais les mêmes exercices que pour PMB :
+   * créer ou modifier une notice simple ;
+   * faire un prêt / retour sur un lecteur de test ;
+   * lancer une recherche dans l’OPAC.
+4. Note les **différences de vocabulaire** ou d’interface par rapport à PMB.
+
+### Étape 3 – Orphée : comprendre la logique sans l’installer
+
+Orphée est un logiciel **propriétaire** : tu ne peux pas légalement le télécharger et l’installer librement chez toi.
+
+Pour te familiariser :
+
+1. Lire les **présentations et plaquettes** d’Orphée sur le site éditeur.
+2. Regarder des **captures d’écran / vidéos de démo** (liens au début du document).
+3. Repérer les grands modules :
+   * catalogue / notices,
+   * exemplaires,
+   * circulation,
+   * usagers,
+   * statistiques.
+4. Faire le parallèle avec ce que tu connais déjà dans PMB et Koha.
+
+En entretien, tu peux formuler par exemple :
+
+> « J’ai pratiqué PMB et Koha sur des instances de test pour les opérations de base (catalogage, prêts, recherches). Pour Orphée, je me suis documentée à partir du site éditeur et de démonstrations vidéo ; comme la logique notice/exemplaire/usager est la même, je sais que je peux m’adapter rapidement. »
+
+---
+
 ## 5. Bonnes pratiques professionnelles
 
 ## 5.1. Harmonisation
