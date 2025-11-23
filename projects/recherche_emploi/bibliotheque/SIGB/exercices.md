@@ -1,5 +1,7 @@
 # Exercices SIGB — Niveau Expert (30 exercices)
 
+↩️ Retour au sommaire SIGB : [`README.md`](./README.md)
+
 Objectif : t’entraîner aux workflows professionnels d’un SIGB (PMB, Koha, Orphée…), comme en situation réelle.
 Pour chaque exercice, indique **les actions exactes à réaliser**, **le module utilisé**, et **la logique professionnelle**.
 

@@ -1,5 +1,7 @@
 # Corrections détaillées – Exercices SIGB (1 à 30)
 
+↩️ Retour au sommaire SIGB : [`README.md`](./README.md)
+
 Chaque correction décrit la **procédure professionnelle complète**, les modules SIGB concernés et les bonnes pratiques.
 
 ---

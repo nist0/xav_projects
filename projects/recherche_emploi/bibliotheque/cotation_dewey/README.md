@@ -1,5 +1,7 @@
 # Cotation Dewey – Classification décimale (CDD)
 
+↩️ Retour à l’index général : [`../README.md`](../README.md)
+
 Ce dossier t’aide à maîtriser la classification décimale Dewey, depuis les grandes classes jusqu’à l’attribution précise d’une cote en situation réelle.
 
 ## Contenu du dossier

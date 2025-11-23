@@ -1,5 +1,7 @@
 # Indexation matière RAMEAU
 
+↩️ Retour à l’index général : [`../README.md`](../README.md)
+
 Ce dossier est dédié à l’indexation matière avec RAMEAU : comprendre les vedettes, les subdivisions et le processus d’indexation professionnelle.
 
 ## Contenu du dossier

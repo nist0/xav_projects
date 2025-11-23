@@ -2,6 +2,8 @@
 
 Objectif : maîtriser les fonctionnalités, logiques, workflows et bonnes pratiques professionnelles des SIGB pour travailler en médiathèque comme une personne expérimentée.
 
+↩️ Retour au sommaire SIGB : [`README.md`](./README.md)
+
 ---
 
 ## 1. Définition et rôle d’un SIGB

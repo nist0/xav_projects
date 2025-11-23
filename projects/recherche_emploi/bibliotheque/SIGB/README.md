@@ -1,5 +1,7 @@
 # SIGB – Système intégré de gestion de bibliothèque
 
+↩️ Retour à l’index général : [`../README.md`](../README.md)
+
 Ce dossier regroupe tout ce qu’il te faut pour maîtriser un SIGB (PMB, Koha, Orphée, etc.) en situation professionnelle et en entretien.
 
 ## Contenu du dossier

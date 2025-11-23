@@ -1,5 +1,7 @@
 # Catalogage UNIMARC
 
+↩️ Retour à l’index général : [`../README.md`](../README.md)
+
 Ce dossier couvre le catalogage en UNIMARC : structure d’une notice, zones essentielles, méthode de travail et entraînement.
 
 ## Contenu du dossier

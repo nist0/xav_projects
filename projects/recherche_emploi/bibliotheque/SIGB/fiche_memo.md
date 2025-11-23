@@ -1,5 +1,9 @@
 # Fiche mémo A4 – SIGB (Système intégré de gestion de bibliothèque)
 
+↩️ Retour au sommaire SIGB : [`README.md`](./README.md)
+
+Objectif : avoir sous la main une synthèse A4 des notions essentielles sur les SIGB pour réviser rapidement avant un entretien ou une prise de poste.
+
 Document synthétique pour maîtriser rapidement les fonctions professionnelles d’un SIGB.
 
 ---
