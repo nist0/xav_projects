@@ -34,6 +34,7 @@ Vidéos (FR) pour voir l’interface Koha en action :
 
 * YouTube – « Présentation de Koha (interface et modules) » : [voir les vidéos](https://www.youtube.com/results?search_query=koha+sigb+d%C3%A9monstration+fran%C3%A7ais)
 * YouTube – playlists de tutoriels Koha (modules prêts, notices, usagers) : [voir les playlists](https://www.youtube.com/results?search_query=formation+koha+biblioth%C3%A9caires)
+* YouTube – tutoriel vidéo Koha (exemple concret) : [Tutoriel Koha](https://www.youtube.com/watch?v=_LIsY8MQKAw)
 
 ### PMB
 
