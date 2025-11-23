@@ -359,6 +359,24 @@ Quelques formulations que tu peux utiliser :
    * je rédige sur papier ce que je mettrais en 200, 210, 215, 330, 606, 686 ;
    * je compare avec une notice trouvée dans un catalogue public.
 
+---
+
+## 9. Pour aller plus loin (ressources externes)
+
+* [Manuel UNIMARC – format bibliographique (Transition bibliographique)](https://www.transition-bibliographique.fr/unimarc/manuel-unimarc-format-bibliographique/)
+* [UNIMARC : manuel de catalogage (BPI – Bibliothèque publique d’information)](https://www.bpi.fr/article/unimarc-manuel-de-catalogage)
+* [Formats UNIMARC – ressources générales (Transition bibliographique)](https://www.transition-bibliographique.fr/unimarc/)
+* [Manuel UNIMARC – format des données d’autorité (Transition bibliographique)](https://www.transition-bibliographique.fr/unimarc/manuel-unimarc-format-donnees-autorite/)
+
+Autres ressources utiles sur la pratique du catalogage :
+
+* [Guide méthodologique du Sudoc](https://www.abes.fr/sudoc/guide-methodologique/) (ABES)
+* [KitCat BnF – Ressources sur le catalogage](https://kitcat.bnf.fr/)
+
+Pour aller plus loin sur l’évolution d’UNIMARC avec RDA-FR :
+
+* [Changements UNIMARC avec RDA-FR – Questions / Réponses (Transition bibliographique, 27/02/2024)](https://www.transition-bibliographique.fr/faq-unimarc-rda-fr/)
+
 En suivant ce document, tu as une base solide pour :
 
 * comprendre le catalogage UNIMARC ;
