@@ -10,6 +10,8 @@ Ce dossier regroupe tes fiches, exercices et documents de référence pour la pr
 - [`entretien_avancé.md`](./entretien_avancé.md) : simulation d’entretien avancé (questions/réponses) pour préparer les oraux.
 - [`notions.md`](./notions.md) : synthèse des notions essentielles (SIGB, Dewey, UNIMARC, RAMEAU, médiation, etc.).
 - [`comparatif_bibliotheque_librairie.md`](./comparatif_bibliotheque_librairie.md) : comparatif entre travail en bibliothèque/médiathèque et en librairie/enseigne culturelle.
+- [`rapport_entre_notions.md`](./rapport_entre_notions.md) : explication de l’articulation entre SIGB, UNIMARC, Dewey et RAMEAU.
+- [`organigramme.md`](./organigramme.md) : schéma (texte + Mermaid) de l’articulation SIGB / UNIMARC / Dewey / RAMEAU.
 
 ### Dossiers thématiques
 
@@ -44,6 +46,7 @@ Ce dossier regroupe tes fiches, exercices et documents de référence pour la pr
 - [`SIGB/exercices.md`](./SIGB/exercices.md) : exercices pratiques autour des SIGB (scénarios d'utilisation, cas concrets).
 - [`SIGB/exercices_corriges.md`](./SIGB/exercices_corriges.md) : corrigés des exercices SIGB.
 - [`SIGB/fiche_memo.md`](./SIGB/fiche_memo.md) : fiche mémo SIGB (vocabulaire, concepts, questions typiques en entretien).
+- [`SIGB/ecrans_courants.md`](./SIGB/ecrans_courants.md) : exemples d'écrans types de SIGB et cycle d’utilisation illustré (texte + infographie).
 
 ---
 

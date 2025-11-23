@@ -8,6 +8,8 @@ Document synthétique pour maîtriser rapidement les fonctions professionnelles 
 
 Savoir utiliser les fonctionnalités essentielles d’un SIGB : notices, exemplaires, prêts/retours, réservations, usagers, statistiques.
 
+Pour **visualiser concrètement les écrans typiques d’un SIGB**, tu peux aussi consulter : [`ecrans_courants.md`](./ecrans_courants.md).
+
 ---
 
 ## 1. Modules principaux

@@ -8,6 +8,7 @@ Ce dossier regroupe tout ce qu’il te faut pour maîtriser un SIGB (PMB, Koha, 
 - [`doc_expert.md`](./doc_expert.md) : dossier complet « niveau experte » sur le fonctionnement d’un SIGB, ses workflows et les bonnes pratiques à citer en entretien.
 - [`exercices.md`](./exercices.md) : 30 mises en situation professionnelles à traiter (comme si tu étais à l’accueil ou en back-office).
 - [`exercices_corriges.md`](./exercices_corriges.md) : corrections détaillées des 30 exercices, avec la procédure SIGB attendue et les bons réflexes métiers.
+- [`ecrans_courants.md`](./ecrans_courants.md) : exemples d’écrans types de SIGB et cycle d’utilisation complet (version texte + infographie).
 
 ## Comment l’utiliser
 

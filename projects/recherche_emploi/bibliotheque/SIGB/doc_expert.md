@@ -18,6 +18,44 @@ Un **SIGB** (Système Intégré de Gestion de Bibliothèque) est un logiciel cen
 
 SIGB utilisés en France : **PMB**, **Koha**, **Orphée**, **Decalog**, **AFI Nanook**, **Syrtis**…
 
+Pour **voir à quoi ressemblent concrètement les écrans** (recherche, prêt, usager, statistiques…), tu peux t’appuyer sur le document : [`ecrans_courants.md`](./ecrans_courants.md).
+
+---
+
+## 1.b. Liens utiles sur quelques SIGB (Koha, PMB, Orphée)
+
+### Koha
+
+* Wikipédia (FR) : [Koha (logiciel)](https://fr.wikipedia.org/wiki/Koha_(logiciel))
+* Site du projet : [Koha Community](https://koha-community.org/)
+* Démonstrations en ligne : [Koha Demo (by ByWater Solutions)](https://demo.bywatersolutions.com/) (interface de test libre d’accès)
+
+Vidéos (FR) pour voir l’interface Koha en action :
+
+* YouTube – « Présentation de Koha (interface et modules) » : [voir les vidéos](https://www.youtube.com/results?search_query=koha+sigb+d%C3%A9monstration+fran%C3%A7ais)
+* YouTube – playlists de tutoriels Koha (modules prêts, notices, usagers) : [voir les playlists](https://www.youtube.com/results?search_query=formation+koha+biblioth%C3%A9caires)
+
+### PMB
+
+* Wikipédia (FR) : [PMB (logiciel)](https://fr.wikipedia.org/wiki/PMB_(logiciel))
+* Site officiel : [PMB Services](https://www.sigb.net/)
+* Démo en ligne : [Démo PMB](https://demo.sigb.net/) (selon disponibilité sur le site éditeur)
+
+Vidéos (FR) pour voir l’interface PMB en action :
+
+* YouTube – résultats pour « tutoriel PMB SIGB » : [voir les vidéos](https://www.youtube.com/results?search_query=tutoriel+PMB+SIGB)
+* YouTube – résultats pour « formation PMB bibliothécaires » : [voir les vidéos](https://www.youtube.com/results?search_query=formation+PMB+biblioth%C3%A9caires)
+
+### Orphée
+
+* Wikipédia (FR) : [Orphée (SIGB)](https://fr.wikipedia.org/wiki/Orph%C3%A9e_(logiciel))
+* Site éditeur (Opsys) : [Orphée – SIGB pour bibliothèques](https://www.opsys.fr/)
+
+Vidéos (FR) pour voir l’interface Orphée en action :
+
+* YouTube – résultats pour « Orphée SIGB démonstration » : [voir les vidéos](https://www.youtube.com/results?search_query=Orph%C3%A9e+SIGB+d%C3%A9monstration)
+* Dailymotion – résultats pour « Orphée bibliothèque logiciel » : [voir les vidéos](https://www.dailymotion.com/search/Orph%C3%A9e%20biblioth%C3%A8que%20logiciel/videos)
+
 ---
 
 ## 2. Architecture générale d’un SIGB
