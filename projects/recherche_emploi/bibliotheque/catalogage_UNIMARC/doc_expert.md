@@ -64,13 +64,13 @@ En SIGB, tu n’as pas toujours besoin de tout connaître par cœur, mais tu doi
 
 ```mermaid
 graph TD
-  A[Notice UNIMARC] --> B[Zones de contrôle<br/>(00X)]
-  A --> C[Données codées<br/>(1XX)]
-  A --> D[Description bibliographique<br/>(2XX)]
-  A --> E[Collections & notes<br/>(225, 3XX, 5XX)]
-  A --> F[Accès matières<br/>(6XX)]
-  A --> G[Accès auteurs & titres liés<br/>(7XX)]
-  A --> H[Liens entre notices<br/>(4XX)]
+  A[Notice UNIMARC] --> B[Zones de contrôle (00X)]
+  A --> C[Données codées (1XX)]
+  A --> D[Description bibliographique (2XX)]
+  A --> E[Collections & notes (225, 3XX, 5XX)]
+  A --> F[Accès matières (6XX)]
+  A --> G[Accès auteurs & titres liés (7XX)]
+  A --> H[Liens entre notices (4XX)]
 
   C --> C1[100 – Données générales de traitement]
   C --> C2[101 – Langue]
