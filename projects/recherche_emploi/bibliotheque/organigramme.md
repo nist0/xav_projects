@@ -7,12 +7,12 @@ Ce schéma te montre clairement comment les quatre éléments se relient entre e
 ## 🗺️ Schéma général (version texte + Mermaid)
 
 ```mermaid
-graph TD;
-    A[SIGB<br>(Système Intégré de Gestion de Bibliothèque)] --> B[Notice UNIMARC<br>(Format de catalogage)]
-    B --> C[Dewey<br>(Classification / Cote)\nZone 686]
-    B --> D[RAMEAU<br>(Indexation matière)\nZone 606]
-    C --> E[Mise en rayon<br>Classement physique]
-    D --> F[Recherche thématique<br>OPAC / Catalogue]
+graph TD
+    A["SIGB\n(Système Intégré de Gestion de Bibliothèque)"] --> B["Notice UNIMARC\n(Format de catalogage)"]
+    B --> C["Dewey\n(Classification / Cote)\nZone 686"]
+    B --> D["RAMEAU\n(Indexation matière)\nZone 606"]
+    C --> E["Mise en rayon\n(Classement physique)"]
+    D --> F["Recherche thématique\n(OPAC / Catalogue)"]
 ```
 
 ---
