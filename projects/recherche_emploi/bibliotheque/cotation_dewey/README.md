@@ -4,10 +4,10 @@ Ce dossier t’aide à maîtriser la classification décimale Dewey, depuis les 
 
 ## Contenu du dossier
 
-- `fiche_memo.md` : fiche A4 synthétique sur les 10 classes, la méthode rapide de cotation et les erreurs à éviter.
-- `doc_expert.md` : dossier complet pour comprendre en profondeur la logique Dewey et savoir en parler en entretien.
-- `exercices.md` : série d’exercices pratiques de cotation (situations variées, documents de différents types).
-- `exercices_corriges.md` : propositions de cotes et explications, pour comparer avec tes réponses.
+- [`fiche_memo.md`](./fiche_memo.md) : fiche A4 synthétique sur les 10 classes, la méthode rapide de cotation et les erreurs à éviter.
+- [`doc_expert.md`](./doc_expert.md) : dossier complet pour comprendre en profondeur la logique Dewey et savoir en parler en entretien.
+- [`exercices.md`](./exercices.md) : série d’exercices pratiques de cotation (situations variées, documents de différents types).
+- [`exercices_corriges.md`](./exercices_corriges.md) : propositions de cotes et explications, pour comparer avec tes réponses.
 
 ## Comment l’utiliser
 

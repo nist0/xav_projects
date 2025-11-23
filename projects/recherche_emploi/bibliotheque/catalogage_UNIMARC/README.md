@@ -4,10 +4,10 @@ Ce dossier couvre le catalogage en UNIMARC : structure d’une notice, zones es
 
 ## Contenu du dossier
 
-- `fiche_memo.md` : fiche A4 de révision rapide (zones clés, workflow de création/complétude d’une notice, erreurs fréquentes).
-- `doc_expert.md` : dossier détaillé « niveau experte » pour comprendre la logique UNIMARC et les pratiques attendues en bibliothèque.
-- `exercices.md` : exercices de catalogage (à partir de situations ou de documents types).
-- `exercices_corriges.md` : corrections commentées pour chaque exercice, avec rappel des zones et des bons choix.
+- [`fiche_memo.md`](./fiche_memo.md) : fiche A4 de révision rapide (zones clés, workflow de création/complétude d’une notice, erreurs fréquentes).
+- [`doc_expert.md`](./doc_expert.md) : dossier détaillé « niveau experte » pour comprendre la logique UNIMARC et les pratiques attendues en bibliothèque.
+- [`exercices.md`](./exercices.md) : exercices de catalogage (à partir de situations ou de documents types).
+- [`exercices_corriges.md`](./exercices_corriges.md) : corrections commentées pour chaque exercice, avec rappel des zones et des bons choix.
 
 ## Comment l’utiliser
 

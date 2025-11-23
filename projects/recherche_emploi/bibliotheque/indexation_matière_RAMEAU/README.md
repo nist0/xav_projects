@@ -4,10 +4,10 @@ Ce dossier est dédié à l’indexation matière avec RAMEAU : comprendre les 
 
 ## Contenu du dossier
 
-- `fiche_memo.md` : fiche A4 synthétique sur la structure d’une vedette, les types de vedettes et les erreurs fréquentes.
-- `doc_expert.md` : dossier complet expliquant la logique RAMEAU, les étapes d’indexation et les formulations à utiliser en entretien.
-- `exercices.md` : 30 exercices d’indexation (sujets variés) à traiter comme en situation de travail.
-- `exercices_corriges.md` : corrections détaillées des exercices avec propositions de vedettes et subdivisions.
+- [`fiche_memo.md`](./fiche_memo.md) : fiche A4 synthétique sur la structure d’une vedette, les types de vedettes et les erreurs fréquentes.
+- [`doc_expert.md`](./doc_expert.md) : dossier complet expliquant la logique RAMEAU, les étapes d’indexation et les formulations à utiliser en entretien.
+- [`exercices.md`](./exercices.md) : 30 exercices d’indexation (sujets variés) à traiter comme en situation de travail.
+- [`exercices_corriges.md`](./exercices_corriges.md) : corrections détaillées des exercices avec propositions de vedettes et subdivisions.
 
 ## Comment l’utiliser
 
