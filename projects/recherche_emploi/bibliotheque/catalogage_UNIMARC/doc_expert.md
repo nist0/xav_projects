@@ -257,6 +257,12 @@ Exemple de phrase :
 
 > « En catalogage UNIMARC, je sais créer et corriger des notices complètes : zones descriptives (200, 210, 215), zones de notes (300, 327, 330), indexation matière (606) et cote Dewey (686), ainsi que les accès auteurs (700 et suivants). Je suis particulièrement attentive à la cohérence des données et à l’utilisation des autorités normalisées. »
 
+### Autres formulations possibles en entretien
+
+* « Quand je catalogue, je commence par voir s’il existe déjà une notice de qualité (BnF, SUDOC), que j’importe puis j’adapte au contexte local plutôt que de tout recréer. »
+* « Je sais expliquer clairement la différence entre notice bibliographique, notice d’autorité et exemplaire, ce qui rassure les équipes sur ma maîtrise du catalogage. »
+* « Je suis attentive à l’homogénéité des notices (auteurs, sujets, résumés) pour que le catalogue reste cohérent et lisible pour les usagers. »
+
 ---
 
 ## 6. Application concrète : exemple de notice UNIMARC simplifiée

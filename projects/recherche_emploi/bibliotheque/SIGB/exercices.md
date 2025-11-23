@@ -5,7 +5,7 @@ Pour chaque exercice, indique **les actions exactes à réaliser**, **le module 
 
 ---
 
-# 🔵 Exercices 1 à 10 — Prêts / Retours / Réservations
+## 🔵 Exercices 1 à 10 — Prêts / Retours / Réservations
 
 1. Un usager rend un document en retard de 12 jours. Le SIGB doit signaler un retard et vérifier les amendes (si existantes). Décris la procédure complète.
 2. Une lectrice souhaite renouveler un prêt, mais le document est réservé par un autre usager. Que dois-tu faire dans le SIGB ?
@@ -20,7 +20,7 @@ Pour chaque exercice, indique **les actions exactes à réaliser**, **le module 
 
 ---
 
-# 🔵 Exercices 11 à 20 — Noticage / Catalogage / Exemplaires
+## 🔵 Exercices 11 à 20 — Noticage / Catalogage / Exemplaires
 
 11. Créer une nouvelle notice importée depuis la BnF en Z39.50, puis ajouter un exemplaire.
 12. Modifier une notice : changer l’éditeur et corriger une faute dans le titre.
@@ -35,7 +35,7 @@ Pour chaque exercice, indique **les actions exactes à réaliser**, **le module 
 
 ---
 
-# 🔵 Exercices 21 à 30 — Usagers / Statistiques / Administration
+## 🔵 Exercices 21 à 30 — Usagers / Statistiques / Administration
 
 21. Créer un nouveau compte lecteur (adulte), avec durée d’abonnement personnalisée.
 22. Modifier une catégorie d’usager (enfant → adulte). Quel impact sur les règles de prêt ?

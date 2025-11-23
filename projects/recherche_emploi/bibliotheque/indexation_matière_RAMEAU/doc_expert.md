@@ -9,7 +9,7 @@ Objectif : maîtriser l’indexation matière RAMEAU comme une professionnelle e
 
 ---
 
-# 1. Qu’est-ce que RAMEAU ?
+## 1. Qu’est-ce que RAMEAU ?
 
 RAMEAU = **Répertoire d’Autorité-Matière Encyclopédique et Alphabétique Unifié**.
 C’est le **langage d’indexation contrôlé** utilisé dans les bibliothèques françaises (BNF, SUDOC, réseaux documentaires...).
@@ -29,7 +29,7 @@ Avantages :
 
 ---
 
-# 2. But de l’indexation RAMEAU
+## 2. But de l’indexation RAMEAU
 
 L’indexation sert à :
 
@@ -44,7 +44,7 @@ Différence avec la Dewey :
 
 ---
 
-# 3. Anatomie d’une vedette-matière RAMEAU
+## 3. Anatomie d’une vedette-matière RAMEAU
 
 Une vedette RAMEAU peut comprendre :
 
@@ -64,7 +64,7 @@ Exemple :
 
 ---
 
-# 4. Les types de vedettes RAMEAU
+## 4. Les types de vedettes RAMEAU
 
 ## 4.1. Vedettes « Nom commun »
 
@@ -98,7 +98,7 @@ Exemples :
 
 ---
 
-# 5. Processus professionnel d’indexation RAMEAU
+## 5. Processus professionnel d’indexation RAMEAU
 
 Voici la méthode utilisée par les bibliothécaires experts.
 
@@ -140,7 +140,7 @@ Selon le document :
 
 ---
 
-# 6. Exemple complet d’indexation pour différents types de documents
+## 6. Exemple complet d’indexation pour différents types de documents
 
 ## 6.1. Document : *Guide de gestion du stress au travail*
 
@@ -174,7 +174,7 @@ Vedettes RAMEAU :
 
 ---
 
-# 7. Règles essentielles à maîtriser comme une experte
+## 7. Règles essentielles à maîtriser comme une experte
 
 ## 7.1. Toujours utiliser la forme autorisée
 
@@ -210,22 +210,27 @@ Utiliser les termes les plus **spécifiques**.
 
 ---
 
-# 8. Exercices d’entraînement (optionnel)
+## 8. Exercices d’entraînement (optionnel)
 
 Souhaites-tu 20 ou 30 exercices RAMEAU ?
 
 ---
 
-# 9. Expressions professionnelles à utiliser en entretien
+## 9. Expressions professionnelles à utiliser en entretien
 
 * « J’identifie les concepts principaux du document et je sélectionne les vedettes RAMEAU les plus pertinentes. »
 * « Je maîtrise les subdivisions de forme, de temps, de lieu et de sujet. »
 * « Je vérifie toujours la cohérence des vedettes avec les autorités RAMEAU. »
 * « Je sais indexer de manière précise et homogène pour optimiser la recherche documentaire. »
 
+### Autres formulations possibles en entretien
+
+* « En indexation RAMEAU, j’identifie d’abord les idées principales du document, puis je choisis les vedettes autorisées les plus pertinentes avec les subdivisions adaptées ($x, $y, $z, $v). »
+* « Mon objectif est que la recherche par sujet dans le catalogue soit claire et cohérente pour les usagers, avec des vedettes homogènes d’un document à l’autre. »
+
 ---
 
-# 10. Pyramide RAMEAU — résumé visuel
+## 10. Pyramide RAMEAU — résumé visuel
 
 1. **Terme principal** (obligatoire)
 2. **$x — Sujet secondaire** (facultatif)
@@ -241,7 +246,7 @@ Exemple final :
 
 ---
 
-# 11. Annexe : grands types de vedettes RAMEAU
+## 11. Annexe : grands types de vedettes RAMEAU
 
 *(Synthèse complète)*
 

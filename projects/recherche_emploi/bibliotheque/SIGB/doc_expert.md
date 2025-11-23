@@ -4,7 +4,7 @@ Objectif : maîtriser les fonctionnalités, logiques, workflows et bonnes pratiq
 
 ---
 
-# 1. Définition et rôle d’un SIGB
+## 1. Définition et rôle d’un SIGB
 
 Un **SIGB** (Système Intégré de Gestion de Bibliothèque) est un logiciel centralisant toutes les opérations quotidiennes d’une bibliothèque :
 
@@ -20,7 +20,7 @@ SIGB utilisés en France : **PMB**, **Koha**, **Orphée**, **Decalog**, **AFI Na
 
 ---
 
-# 2. Architecture générale d’un SIGB
+## 2. Architecture générale d’un SIGB
 
 Un SIGB est organisé en plusieurs modules :
 
@@ -67,7 +67,7 @@ Un SIGB est organisé en plusieurs modules :
 
 ---
 
-# 3. Workflows professionnels essentiels
+## 3. Workflows professionnels essentiels
 
 ## 3.1. Traitement documentaire complet
 
@@ -107,7 +107,7 @@ Un SIGB est organisé en plusieurs modules :
 
 ---
 
-# 4. Tâches fréquentes que tu dois savoir maîtriser
+## 4. Tâches fréquentes que tu dois savoir maîtriser
 
 * Rechercher une notice.
 * Modifier une notice (zones bibliographiques et d’autorité).
@@ -120,7 +120,7 @@ Un SIGB est organisé en plusieurs modules :
 
 ---
 
-# 5. Bonnes pratiques professionnelles
+## 5. Bonnes pratiques professionnelles
 
 ## 5.1. Harmonisation
 
@@ -142,7 +142,7 @@ Toujours respecter :
 
 ---
 
-# 6. Savoir parler SIGB en entretien
+## 6. Savoir parler SIGB en entretien
 
 Formulations professionnelles :
 
@@ -151,9 +151,15 @@ Formulations professionnelles :
 * « J’ai de l’expérience dans l’accueil public, la gestion des réservations et le suivi des fiches lecteurs. »
 * « Je sais utiliser les outils statistiques du SIGB pour analyser l’activité documentaire. »
 
+### Autres formulations possibles en entretien
+
+* « Je maîtrise les principaux workflows d’un SIGB : catalogage, gestion des exemplaires, prêts/retours, réservations, gestion des usagers et statistiques. »
+* « En situation d’accueil, je sais gérer les cas concrets (retard, perte, réservation, carte expirée) tout en gardant un bon contact avec le public. »
+* « Je peux rapidement m’adapter à un nouveau SIGB, car les logiques de base restent les mêmes : notices, exemplaires, usagers et règles de prêt. »
+
 ---
 
-# 7. Annexes : notions avancées
+## 7. Annexes : notions avancées
 
 ## 7.1. Autorités
 

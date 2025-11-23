@@ -4,7 +4,7 @@ Chaque correction décrit la **procédure professionnelle complète**, les modul
 
 ---
 
-# 🔵 Exercices 1 à 10 — Prêts / Retours / Réservations
+## 🔵 Exercices 1 à 10 — Prêts / Retours / Réservations
 
 ## **1. Retour en retard (12 jours)**
 
@@ -91,7 +91,7 @@ Affiche : dates, documents, retards.
 
 ---
 
-# 🔵 Exercices 11 à 20 — Notices / Exemplaires
+## 🔵 Exercices 11 à 20 — Notices / Exemplaires
 
 ## **11. Import BnF + ajout exemplaire**
 
@@ -162,7 +162,7 @@ Autorisé seulement si :
 
 ---
 
-# 🔵 Exercices 21 à 30 — Usagers / Statistiques / Administration
+## 🔵 Exercices 21 à 30 — Usagers / Statistiques / Administration
 
 ## **21. Nouveau compte lecteur adulte**
 
