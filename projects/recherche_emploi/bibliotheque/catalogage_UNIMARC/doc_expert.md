@@ -64,32 +64,41 @@ En SIGB, tu n’as pas toujours besoin de tout connaître par cœur, mais tu doi
 
 ```mermaid
 graph TD
-  A[Notice UNIMARC] --> B[Zones de contrôle (00X)]
-  A --> C[Données codées (1XX)]
-  A --> D[Description bibliographique (2XX)]
-  A --> E[Collections et notes (225, 3XX, 5XX)]
-  A --> F[Accès matières (6XX)]
-  A --> G[Accès auteurs et titres liés (7XX)]
-  A --> H[Liens entre notices (4XX)]
+  A[Notice UNIMARC]
+  B[Zones de contrôle 00X]
+  C[Données codées 1XX]
+  D[Description bibliographique 2XX]
+  E[Collections et notes 225 3XX 5XX]
+  F[Accès matières 6XX]
+  G[Accès auteurs 7XX]
+  H[Liens entre notices 4XX]
 
-  C --> C1[100 – Données générales de traitement]
-  C --> C2[101 – Langue]
-  C --> C3[102 – Pays]
+  A --> B
+  A --> C
+  A --> D
+  A --> E
+  A --> F
+  A --> G
+  A --> H
 
-  D --> D1[200 – Titre et responsabilité]
-  D --> D2[210 – Adresse (édition)]
-  D --> D3[215 – Description matérielle]
-  D --> D4[225 – Collection]
+  C --> C1[100 Données générales]
+  C --> C2[101 Langue]
+  C --> C3[102 Pays]
 
-  E --> E1[300 – Note générale]
-  E --> E2[327 – Note de contenu]
-  E --> E3[330 – Résumé]
+  D --> D1[200 Titre et responsabilité]
+  D --> D2[210 Adresse]
+  D --> D3[215 Description matérielle]
+  D --> D4[225 Collection]
 
-  F --> F1[606 – Accès matière]
-  F --> F2[686 – Classification (cote)]
+  E --> E1[300 Note générale]
+  E --> E2[327 Note de contenu]
+  E --> E3[330 Résumé]
 
-  G --> G1[700 – Auteur principal]
-  G --> G2[701 et 702 – Autres responsabilités]
+  F --> F1[606 Accès matière]
+  F --> F2[686 Classification cote]
+
+  G --> G1[700 Auteur principal]
+  G --> G2[701 702 Autres responsabilités]
 ```
 
 ---
