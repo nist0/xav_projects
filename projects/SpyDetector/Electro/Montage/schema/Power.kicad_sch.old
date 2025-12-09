@@ -1,0 +1,10 @@
+(kicad_sch
+  (version 20211014)
+  (generator "eeschema")
+
+  (paper "A4")
+
+  ;; Feuille d’alimentation – USB-C, interrupteur, MP1584 (5V), MP1584 (3V3)
+  ;; Tu peux copier/coller ton schéma actuel ici.
+
+)

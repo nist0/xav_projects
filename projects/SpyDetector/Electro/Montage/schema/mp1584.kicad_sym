@@ -1,0 +1,27 @@
+(kicad_symbol_lib (version 20211014) (generator "chatgpt")
+  (symbol "MP1584_Module"
+    (property "Reference" "U" (id 0) (at 0 6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MP1584_Module" (id 1) (at 0 -6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 -8 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Datasheet" "" (id 3) (at 0 -10 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+
+    (symbol "MP1584_Module_1_1"
+      (rectangle (start -7 4) (end 7 -4)
+        (stroke (width 0.15) (type solid)) (fill (type background))
+      )
+
+      (pin power_in  line (at -10  2 0) (length 3) (name "VIN+")   (number "1"))
+      (pin power_in  line (at -10 -2 0) (length 3) (name "GND_IN") (number "2"))
+      (pin power_out line (at  10  2 180) (length 3) (name "VOUT+") (number "3"))
+      (pin power_in  line (at  10 -2 180) (length 3) (name "GND_OUT") (number "4"))
+    )
+  )
+)

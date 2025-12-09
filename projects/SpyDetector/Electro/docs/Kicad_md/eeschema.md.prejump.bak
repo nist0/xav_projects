@@ -1,0 +1,2326 @@
+# KiCad 9 – Schematic Editor  
+## Complete Reference Manual (Markdown Edition)  
+### Annotated Version with Explanations, Tips & Clarifications  
+*Converted from the official KiCad documentation (eeschema.pdf)*
+
+
+## 18. Editing Object Properties
+
+## 18. Editing Object Properties
+
+Chaque objet du schéma possède des propriétés :
+
+Certains symboles (MCU notamment) ont plusieurs fonctions possibles par pin :
+
+- GPIO  
+- ADC  
+- SPI  
+- UART  
+- PWM  
+- etc.
+
+KiCad permet de sélectionner une alternative **après placement**.
+
+> 📄 *Image page 23 – Alternate pin icons*  
+> Description : une petite flèche bleue à côté des pins montrant qu’une autre fonction existe.
+
+###### Comment changer ?
+
+- Symbol Properties → Pin Functions  
+- ou clic droit sur le pin → choisir une fonction
+
+---
+
+## 14. Updating & Exchanging Symbols
+
+Quand un symbole est placé, KiCad copie sa définition **dans le schéma**.  
+Donc :  
+➡️ Si la librairie change, **rien ne change automatiquement**.
+
+###### Outil important :
+
+**Tools → Update Symbols from Library**
+
+Options :
+
+1. Update all  
+2. Update selected  
+3. Update by reference (wildcards acceptés)
+
+> 💡 **TIP – Quand utiliser update?**  
+> - tu corriges un pin qui était mal nommé  
+> - tu ajoutes une alternative footprint  
+> - tu changes un symbole obsolète  
+> - tu reçois un projet d’un autre utilisateur avec une ancienne version de lib
+
+---
+
+## 15. Compare Symbol with Library
+
+KiCad permet de comparer :
+
+- symbole dans schéma  
+- symbole dans librairie
+
+Très utile pour comprendre pourquoi un update pose problème.
+
+---
+
+## 16. Changing a Symbol (Swap)
+
+Bouton **Change Symbol…**
+> KiCad est pensé pour minimiser les erreurs humaines ⇒ suis cet ordre pour éviter 90 % des erreurs PCB.
+
+---
+
+## 2. Initial Configuration
+
+Lors de la première exécution, KiCad vérifie si le fichier global `sym-lib-table` existe.
+
+> 📄 *Image page 3*  
+> **Description :** une fenêtre proposant trois choix pour configurer les bibliothèques globales de symboles.
+
+##### Options proposées
+
+1️⃣ **Copy default global symbol library table (recommended)**  
+→ KiCad copie ses bibliothèques standard.
+
+2️⃣ **Use existing sym-lib-table file**  
+→ Si tu as installé les bibliothèques séparément (Linux par exemple).
+
+3️⃣ **Create an empty table**  
+→ Pour une configuration totalement personnalisée.
+
+⚠️ **ATTENTION – Premier piège classique : bibliothèques manquantes**  
+Si les symboles n’apparaissent pas dans l’éditeur, c’est presque toujours un problème de `sym-lib-table`.  
+➡️ Solution : *Preferences → Manage Symbol Libraries*.
+
+---
+
+## 3. The Schematic Editor User Interface
+
+> 📄 *Image page 4–5*  
+> **Description détaillée de l’interface :**  
+> - Au centre : la zone de dessin  
+> - Haut : barres d’outils (fichier, zoom, édition)  
+> - Gauche : affichage / unités / grille / options  
+> - Droite : outils de dessin (symboles, fils, labels…)  
+> - Bas : messages, coordonnées, état du curseur
+
+##### Zones principales
+
+## 1. Canvas (zone de travail)
+C’est ici que le schéma est construit.  
+Tu peux :
+
+- zoomer / dézoomer  
+- te déplacer  
+- sélectionner et éditer des objets  
+- ouvrir des sous-feuilles hiérarchiques
+
+## 2. Toolbars
+- **Top toolbar** : gestion de fichier, zoom, annulations  
+- **Left toolbar** : vues, grille, unités, affichage des pins invisibles  
+- **Right toolbar** : tous les outils de création du schéma  
+- **Bottom bar** : messages + coordonnées du curseur
+
+> 💡 **TIP – Coordonnées relatives (dx, dy)**  
+Appuie sur **Space** pour remettre les coordonnées à zéro.  
+Très utile pour mesurer rapidement des distances sur le schéma.
+
+---
+
+## 4. Navigating the Editing Canvas
+
+###### Panning
+- clic droit ou molette enfoncée → glisser  
+*(modifiable dans Preferences → Mouse & Touchpad)*
+
+###### Zoom
+Outils disponibles :
+
+- 🔍 Zoom in  
+- 🔍 Zoom out  
+- 🖼️ Fit sheet  
+- 📐 Fit all objects
+
+Et un outil **Window Zoom** permettant de sélectionner une zone pour zoomer dedans.
+
+---
+
+## 5. Hotkeys
+
+Hotkeys = raccourcis clavier rapides.
+
+- `?` (ou `+` selon configuration) → affiche la liste complète  
+- Presque toutes les actions possèdent un raccourci  
+- Tous les raccourcis sont **reconfigurables**
+
+##### Emplacements des fichiers de hotkeys
+
+| OS | Emplacement |
+|----|-------------|
+| Windows | `%APPDATA%\kicad\9.0\user.hotkeys` |
+| Linux | `~/.config/kicad/9.0/user.hotkeys` |
+| macOS | `~/Library/Preferences/kicad/9.0/user.hotkeys` |
+
+> 💡 **TIP – Utilise les hotkeys dès le début !**  
+> Cela double ta vitesse sur KiCad.  
+> Les indispensables :  
+> - `A` : ajouter un symbole  
+> - `W` : placer un fil  
+> - `G` : tirer un symbole (drag)  
+> - `M` : déplacer  
+> - `R` : rotation  
+> - `E` : éditer  
+> - `Del` : supprimer  
+
+---
+
+## 6. Selection & Selection Filter
+
+La sélection se fait au clic gauche.  
+Deux modes de sélection de zone :
+
+- **gauche → droite** : sélection *exclusive* (jaune)  
+- **droite → gauche** : sélection *inclusive* (bleu)
+
+##### Modificateurs de sélection
+
+| Action | Windows/Linux | macOS |
+|--------|----------------|--------|
+| Ajouter à la sélection | Ctrl | Cmd |
+| Retirer | Ctrl+Shift | Cmd+Shift |
+| Sélection contextuelle (menu) | clic long | clic long |
+
+##### Selection Filter
+
+En bas à gauche :  
+→ permet de choisir *quels types d’objets* sont sélectionnables :
+
+- wires  
+- labels  
+- symbols  
+- junctions  
+- graphics  
+- etc.
+
+⚠️ **Très utile dans les schémas complexes.**
+
+---
+
+## 7. Left Toolbar Display Controls
+
+Fonctions principales :
+
+- afficher / masquer la grille  
+- changer d’unités  
+- afficher pins invisibles  
+- activer annotation automatique  
+- basculer entre modes de dessin 90° / 45° / libre  
+- ouvrir le **Hierarchy Navigator**  
+- ouvrir le **Properties Manager**
+
+> 💡 **TIP** – Si les pins invisibles sont masquées, tu peux manquer des connexions importantes.  
+Active le bouton dédié lors du debug.
+
+---
+
+## 8. Schematic Creation & Editing
+
+##### Un schéma KiCad contient :
+
+- Symboles  
+- Wires (fils)  
+- Junctions  
+- Labels (locaux, globaux, hiérarchiques)  
+- Power symbols  
+- Bus / bus entries  
+- Graphismes  
+- Textes
+
+> 💡 **KiCad ≠ Paint**  
+> Chaque objet a une signification électrique importante.
+
+---
+
+##### Outils de dessin (Right Toolbar)
+
+> 📄 *Image page 12*  
+> Liste complète des outils décrits dans le PDF.
+
+###### Symboles
+- Ajouter un symbole (`A`)  
+- Ajouter un symbole d’alimentation  
+
+###### Connexions
+- Wire  
+- Bus  
+- Junction  
+- No-connect (croix bleue)
+
+###### Labels
+- Local label  
+- Global label  
+- Hierarchical label  
+- Net class label  
+- Directive rule area  
+
+###### Hiérarchie
+- Ajouter une sous-feuille  
+- Ajouter un pin hiérarchique  
+- Synchroniser labels / pins
+
+###### Graphiques
+- Texte  
+- Tableau  
+- Rectangle  
+- Cercle  
+- Ligne  
+- Bézier  
+- Image bitmap  
+
+---
+
+
+Tu peux écrire :
+
+- `Voltage>3V`  
+- `Power<=500mW`
+
+###### 🔹 Suffixes supportés
+
+| Suffixe | Facteur | Exemple |
+|--------|---------|----------|
+| p | 10⁻¹² | 22p = 22×10⁻¹² |
+| n | 10⁻⁹ | 100n |
+| u | 10⁻⁶ | 4.7u |
+| m | 10⁻³ | 10m |
+| k | 10³ | 47k |
+| M / meg | 10⁶ | 2M |
+| G / g | 10⁹ | 1G |
+| T / t | 10¹² | 10T |
+
+###### 🔹 Regular Expressions
+
+Les regex complètes sont supportées.  
+Utile pour les bibliothèques personnalisées.
+
+---
+
+## 9. 3 Symbol Placement Behavior
+
+Quand tu as sélectionné un symbole :
+
+Il s’attache au curseur → tu peux :
+
+- le **faire pivoter** (hotkey `R`)  
+- le **miroiter** (`X`, `Y`)  
+- éditer ses champs avant placement (clic droit → Edit Fields)
+
+###### Repeated copies
+
+Case : **Place repeated copies**
+
+→ Permet de placer de multiples exemplaires sans retourner à la fenêtre de choix.
+
+###### Multi-unit symbols
+
+Case : **Place all units**
+
+Exemple : un ampli quad LM324 → 4 unités + power unit → KiCad les place en séquence automatiquement.
+
+---
+
+## 9. 4 Power Symbols
+
+Ils sont stockés dans la librairie **power**.  
+KiCad dispose d’un bouton dédié : **Add Power Symbol**.
+
+Cela évite d’utiliser la fenêtre générale "Choose Symbol".
+
+⚠️ Important : Les symboles d’alimentation créent des **global nets**.  
+`VCC`, `GND`, etc.  
+Ils sont connectés partout dans le schéma.
+
+---
+
+## 9. 5 Moving Symbols: Move vs Drag
+
+Très important en pratique.
+
+###### **Move (M)**  
+Déplace le symbole **sans conserver les fils connectés**.
+
+➡️ Les fils restent en place → ils se déconnectent.
+
+###### **Drag (G)**  
+Déplace le symbole **avec les fils**, qui restent connectés.
+
+➡️ Fonction essentielle pour garder un schéma propre.
+
+> 💡 **TIP**  
+> Utilise **G** quand tu réorganises un schéma.  
+> Utilise **M** quand tu veux casser proprement les connexions.
+
+Tu peux aussi “drag” avec la souris selon les préférences (Mouse & Touchpad).
+
+---
+
+## 9. 6 Symbol Rotation and Mirroring
+
+- Rotation : **R**  
+- Mirror X : **X**  
+- Mirror Y : **Y**
+
+Rotation se fait autour de l’ancre du symbole.
+
+---
+
+## 10. Editing Symbol Properties
+
+Deux niveaux d’édition existent :
+
+1️⃣ **Modifier les propriétés de l’instance** (dans le schéma)  
+2️⃣ **Modifier le symbole source** (dans la bibliothèque)
+
+---
+
+## 10. 1 Instance Properties (Symbol Properties dialog)
+
+Hotkey : **E**  
+Ou double-clic sur le symbole.
+
+> 📄 *Image page 19 – Symbol Properties window*  
+> Description : table des champs + options + boutons pour footprint, simulation, etc.
+
+###### Champs affichés
+
+- Reference (ex : R1, C3, U2)  
+- Value  
+- Footprint  
+- Datasheet  
+- Champ personnalisés  
+
+Tous les champs ont :
+
+- Alignement  
+- Position  
+- Taille de texte  
+- Couleur  
+- Mode bold/italic  
+- Option d’autoplace  
+- Option visible/hidden  
+
+---
+
+## 10. 2 Field Special Behaviors
+
+###### 🔹 Field: Footprint
+
+Bouton **Choose Footprint** → ouvre le sélecteur d’empreintes.
+
+Tu peux :
+
+- changer l’empreinte associée  
+- filtrer via keywords  
+
+Plusieurs méthodes d’assignation seront vues plus loin.
+
+---
+
+###### 🔹 Field: Datasheet
+
+Bouton → fichier local ou URL.  
+Tu peux **embed** le datasheet dans la feuille.
+
+💡 *Embedding évite les liens morts quand on partage un projet.*
+
+---
+
+## 10. 3 Symbol Attributes
+
+###### ✔ Exclude from simulation  
+→ Ne participe pas à SPICE.  
+L’affichage est modifié : contour gris + icône simulation barrée.
+
+###### ✔ Exclude from BOM  
+→ Pas inclus dans la génération de la liste de matériaux.
+
+###### ✔ Exclude from board  
+→ L’empreinte ne sera pas poussée vers PCB Editor.
+
+###### ✔ Do Not Populate (DNP)  
+→ Empreinte présente mais marquée *non montée*.  
+Apparaît dé-saturée + un X rouge.
+
+> 💡 **TIP – Gestion DNP efficace**  
+> Combine les champs :  
+> - DNP = yes  
+> - Exclude from BOM = yes  
+> - Dans ERP / fabrication : notes spéciales  
+
+---
+
+## 11. Editing Symbol Graphics / Pins
+
+Pour modifier les pins, formes, contours :
+
+###### Deux choix :
+
+###### 1️⃣ Edit Symbol (instance-only)  
+Hotkey : **Ctrl+E**  
+Modifie uniquement **cette instance**, pas la librairie.
+
+Utile pour :
+
+- décaler un pin  
+- masquer un contour  
+- ajuster une variante locale  
+- personnaliser un symbole sans impacter les autres
+
+⚠️ Ne pas utiliser ça pour corriger un symbole officiellement.
+
+---
+
+###### 2️⃣ Edit Library Symbol  
+Modifie le symbole dans la librairie.  
+N’applique pas automatiquement aux instances existantes.
+
+Il faut ensuite utiliser :
+
+**Tools → Update Symbol from Library**
+
+> 💡 **TIP – Workflow propre pour modifier une librairie**  
+> 1. Modifier la librairie  
+> 2. Sauver  
+> 3. Ouvrir le schéma → Update symbols from library  
+> 4. Vérifier que rien n’a cassé  
+> 5. Commit dans le repo
+
+---
+
+---
+
+## 12. Editing Symbol Fields Individually
+
+Tu peux éditer chaque champ séparément :
+
+- Hotkey général : **E** (quand un field est sélectionné)  
+- Hotkeys dédiés :
+  - **U** : Reference  
+  - **V** : Value  
+  - **F** : Footprint  
+
+Tu peux autopositionner les champs avec **O**.
+
+---
+
+## 13. Alternate Pin Functions
+
+Certains symboles (MCU notamment) ont plusieurs fonctions possibles par pin :
+
+- GPIO  
+- ADC  
+- SPI  
+- UART  
+- PWM  
+- etc.
+
+KiCad permet de sélectionner une alternative **après placement**.
+
+> 📄 *Image page 23 – Alternate pin icons*  
+> Description : une petite flèche bleue à côté des pins montrant qu’une autre fonction existe.
+
+###### Comment changer ?
+
+- Symbol Properties → Pin Functions  
+- ou clic droit sur le pin → choisir une fonction
+
+---
+
+## 14. Updating & Exchanging Symbols
+
+Quand un symbole est placé, KiCad copie sa définition **dans le schéma**.  
+Donc :  
+➡️ Si la librairie change, **rien ne change automatiquement**.
+
+###### Outil important :
+
+**Tools → Update Symbols from Library**
+
+Options :
+
+1. Update all  
+2. Update selected  
+3. Update by reference (wildcards acceptés)
+
+> 💡 **TIP – Quand utiliser update?**  
+> - tu corriges un pin qui était mal nommé  
+> - tu ajoutes une alternative footprint  
+> - tu changes un symbole obsolète  
+> - tu reçois un projet d’un autre utilisateur avec une ancienne version de lib
+
+---
+
+## 15. Compare Symbol with Library
+
+KiCad permet de comparer :
+
+- symbole dans schéma  
+- symbole dans librairie
+
+Très utile pour comprendre pourquoi un update pose problème.
+
+---
+
+## 16. Changing a Symbol (Swap)
+
+Bouton **Change Symbol…**
+
+Permet de remplacer :
+
+- une résistance par une autre  
+- un optocoupleur par un autre  
+- un connecteur par un autre modèle  
+- etc.
+
+Options pour :
+
+- conserver les champs  
+- conserver l’orientation  
+- mapper anciens pins → nouveaux pins  
+
+⚠️ Certaines substitutions peuvent casser les connexions.
+
+---
+
+## 17. Grids and Snapping
+
+La grille est l’un des éléments **les plus importants** de KiCad :  
+elle garantit que les symboles, les pins et les fils s’alignent correctement pour créer des connexions fiables.
+
+> ⚠️ **Attention fondamentale**  
+> KiCad **ne connecte** un fil à un pin **que si leurs coordonnées coïncident exactement**.  
+>  
+> Donc :  
+> 👉 une mauvaise grille = un schéma qui *semble* correct mais qui échoue totalement en ERC et en PCB.
+
+---
+
+## 17. 1 Grid Snapping
+
+Lorsque tu places ou déplaces :
+
+- symboles  
+- fils  
+- labels  
+- textes  
+- graphiques  
+
+… KiCad les **aligne automatiquement sur la grille**.
+
+Même si la grille est invisible ➜ le snapping reste actif (paramètre modifiable).
+
+---
+
+## 17. 2 Connected Object Snapping
+
+Même si la grille est désactivée, KiCad **snappe aux objets connectés** :
+
+- pins
+- extrémités de fils
+- labels
+- jonctions
+
+Ce comportement garantit l’alignement électrique.
+
+---
+
+## 17. 3 Temporary Disabling of Snapping
+
+Pendant que tu déplaces le curseur, tu peux désactiver temporairement certains snapping :
+
+| Action | Raccourci |
+|--------|-----------|
+| Désactiver snapping grille | **Ctrl** |
+| Désactiver snapping objets connectés | **Shift** |
+
+> 💡 **Astuce pratique**  
+> Lorsque tu ajustes un texte ou un label pour l’esthétique, maintenir **Ctrl** te permet de le placer exactement où tu veux.
+
+---
+
+## 17. 4 Recommended Grid Size
+
+KiCad et toutes ses bibliothèques officielles utilisent une grille de : 50 mil (0.050") = 1.27 mm
+
+
+Cette grille doit être utilisée pour :
+
+- placer des symboles  
+- dessiner des fils  
+- créer des pins dans l’éditeur de symboles  
+
+> ⚠️ **IMPORTANT**  
+> Une grille différente (ex : 25 mil, 10 mil) peut causer des ruptures invisibles dans des schémas complexes.  
+>  
+> 👉 Toujours revenir en **50 mil** pour le câblage.
+
+---
+
+## 17. 5 Misaligned Items
+
+Si un symbole ou un fil n’est plus aligné à la grille :
+
+➡️ Sélectionne → clic droit → **Align Elements to Grid**.
+
+Cela remet tout parfaitement en place.
+
+---
+
+## 17. 6 Changing the Grid
+
+3 manières :
+
+1. clic droit dans le canvas → Grid submenu  
+2. hotkeys :  
+   - prochaine grille : **N**  
+   - grille précédente : **Shift+N**  
+3. Preferences → Grids (fenêtre complète)
+
+> 📄 *Image page 14–15 – Grids configuration dialog*  
+> Description : liste des grilles disponibles, boutons Add/Remove/Edit, icônes de tri, champs X/Y spacing.
+
+---
+
+## 17. 7 Creating Custom Grids
+
+Une grille personnalisée peut avoir :
+
+- un pas X ≠ pas Y  
+- un nom spécifique (utile pour PCB / symbol editor)  
+
+Les boutons :
+
+- **Add Grid**  
+- **Remove Grid**  
+- **Edit Grid**  
+
+permettent de gérer des jeux de grilles multiples.
+
+---
+
+## 17. 8 Fast Grids
+
+Dans la fenêtre des grilles :
+
+Tu peux définir **deux grilles rapides** :
+
+- Fast Grid 1 → hotkey : **Alt+1**  
+- Fast Grid 2 → hotkey : **Alt+2**
+
+---
+
+## 17. 9 Grid Overrides
+
+Fonction très puissante.  
+Elle permet d’appliquer *automatiquement* une grille différente selon l’objet :
+
+Exemples :
+
+| Type d’objet | Grille override |
+|--------------|------------------|
+| Wires | 50 mil |
+| Textes | 10 mil |
+| Graphiques | 10 mil |
+| Labels | 25 mil |
+
+Le bouton **Override Grid** est dans la barre latérale gauche.
+
+Raccourci global : **Ctrl+Shift+G**
+
+> 💡 **Tip d’expert**  
+> Active temporairement une petite grille pour ajuster le texte sans casser l’alignement électrique des fils.
+
+---
+
+## 17. 10 Grid Appearance
+
+Modifiable via Preferences → Display Options :
+
+- épaisseur  
+- couleur  
+- forme (dots / lines / crosses)  
+- seuil de visibilité (minimum spacing)
+
+---
+
+## 18. Editing Object Properties
+
+Chaque objet du schéma possède des propriétés :
+
+- symboles  
+- fils  
+- labels  
+- textes  
+- zones graphiques  
+- jonctions  
+- bus  
+
+On peut les modifier via :
+
+- **E** (edit)  
+- clic droit → Properties  
+- **Properties Manager** (panneau latéral)
+
+---
+
+## 18. 1 Properties Dialog
+
+Tu ne peux éditer **qu’un seul type d’objet à la fois**.
+
+Tu ne peux pas ouvrir un même dialog pour :
+
+- un fil + un texte  
+- un symbole + un label  
+- etc.
+
+---
+
+## 18. 2 Properties Manager (pane)
+
+Ce panneau met à jour les propriétés **en temps réel** dès que tu modifies un champ.
+
+> 📄 *Image page 15 – Properties Manager*  
+> Description : liste des propriétés triables, champs éditables immédiats, zones grises pour les propriétés incompatibles.
+
+Quand plusieurs objets sont sélectionnés :
+
+- seuls les **champs communs** apparaissent  
+- chaque modification s’applique individuellement  
+  (ex : changer la rotation modifie chaque objet autour de son propre pivot)
+
+---
+
+## 18. 3 Expressions in Numeric Fields
+
+KiCad permet d’utiliser :
+
+- opérations (`+`, `-`, `*`, `/`)  
+- unités (`mm`, `in`, `mil`)  
+- parenthèses  
+
+Exemples :
+
+2 * 2mm → 4mm
+1in + 1mm → 26.4mm
+(3*25mil) → 75mil
+
+
+---
+
+## 19. Working with Symbols (advanced)
+
+Nous poursuivons les détails non encore couverts.
+
+---
+
+## 19. 1 Symbol Chooser: Footprint Preview
+
+Lorsque le symbole contient un champ Footprint :
+
+- KiCad affiche automatiquement un aperçu 2D de l’empreinte dans le coin inférieur droit.
+- KiCad affiche également les empreintes alternatives correspondant aux **footprint filters** du symbole.
+
+> 💡 Très utile pour repérer si un symbole 0603 / 0805 / THT n’a pas la bonne empreinte.
+
+---
+
+## 19. 2 Multi-Unit Symbols
+
+Exemples :
+
+- LM324 (4 op-amps)  
+- 74HC00 (4 NAND gates)  
+- TL074 (quad op-amp)  
+- certains comparateurs multi-canaux  
+
+Modes :
+
+- **Place all units**  
+- **Place repeated copies**  
+
+KiCad gère automatiquement les références :
+
+U1A
+U1B
+U1C
+U1D
+U1P (power unit)
+
+
+---
+
+## 19. 3 Drag Behavior With Wires Attached
+
+Quand un symbole est déplacé avec **G** (drag) :
+
+- Les fils se déplacent avec lui  
+- Les angles sont conservés (45° / 90° si activé)  
+- Les connexions restent valides
+
+Quand déplacé avec **M** (move) :
+
+- les fils restent en place  
+- les connexions sont cassées
+
+> 💡 **Astuce**  
+> Pour vérifier qu’un symbole est correctement connecté :  
+> → Active l’outil **Highlight Net** et clique le fil  
+> → le symbole doit s’illuminer en même temps
+
+---
+
+## 20. Editing Symbol Forms (Graphic/Pins)
+
+## 20. 1 Edit Symbol… (instance-only)
+
+Utilisation recommandée pour :
+
+- ajuster la position visuelle d’une pin  
+- masquer un contour de symbole  
+- déplacer localement un champ  
+- faire une variante temporaire
+
+## 20. 2 Edit Library Symbol…
+
+Recommandé pour :
+
+- corrections officielles  
+- ajout de nouvelles fonctions pin  
+- modifications qui doivent se retrouver dans tous les projets  
+- contributeurs à des librairies partagées
+
+---
+
+## 21. Alternate Pin Functions (détails avancés)
+
+Un symbole peut définir plusieurs variantes pour une même pin :
+
+Exemple microcontrôleur :
+
+Pin 23 :
+
+PA5
+
+ADC_IN5
+
+TIM2_CH1
+
+SPI1_SCK
+
+GPIO_EXTI5
+
+
+Dans KiCad :
+
+- la **fonction active** est affichée  
+- une petite icône apparaît pour signaler qu’il existe d’autres alternatives  
+- tu peux basculer la fonction à tout moment
+
+> 📄 *Image page 23 – Pin alternate indicator*  
+> Description : petite double-flèche ou icône contextuelle sur le nom de pin.
+
+---
+
+## 22. Updating and Exchanging Symbols (suite)
+
+###### Les symboles dans un schéma sont **figés** une fois placés  
+➡️ c’est la protection de KiCad contre les changements inattendus.
+
+Pour mettre à jour :
+
+###### Tools → Update Symbols from Library…
+
+3 modes :
+
+1. **Update all symbols**
+2. **Update only selected**
+3. **Update by reference** (ex : `U3*` → tous les U3x)
+
+---
+
+## 22. 1 What Gets Updated?
+
+KiCad compare :
+
+- propriétés graphiques  
+- pins (ordre, noms, types, style)  
+- champs par défaut  
+- footprint filters  
+- description et keywords  
+
+> 💡 **À savoir**  
+> KiCad peut conserver un mapping automatique des pins si les noms ne changent pas.
+
+---
+
+## 22. 2 Comparing Symbols
+
+Outil : **Tools → Compare Symbol with Library**
+
+Affiche un diff montrant :
+
+- pins ajoutées / supprimées  
+- pins renommées  
+- changements d’attributs  
+- modifications graphiques
+
+---
+
+## 23. Changing Symbols (Swap)
+
+Quand tu veux remplacer un symbole dans ton schéma :
+
+- clic droit → **Change Symbol…**
+
+Tu peux :
+
+- conserver l’empreinte actuelle  
+- réassigner une nouvelle empreinte  
+- refaire le mapping des pins  
+- garder les champs personnalisés  
+
+Tous les cas sont gérés si on fait attention.
+
+> ⚠️ **Attention critique**  
+> Si tu changes un symbole dont les pins n’ont pas les mêmes noms, **les connexions seront perdues**.  
+>  
+> Toujours vérifier avec Net Highlight ensuite.
+
+---
+
+## 24. Electrical Connections
+
+Dans KiCad, une *connexion électrique* est définie uniquement lorsque :
+
+- les extrémités de deux fils coïncident exactement  
+- un fil touche une **pin**  
+- un fil touche un **label**  
+- des labels identiques sont utilisés correctement  
+- des pins partagent un net global (ex : GNDPWR)
+
+> ⚠️ **Attention n°1 – Les schémas visuellement corrects peuvent être électriquement faux.**  
+> C’est la principale source de bugs dans les designs débutants.
+
+---
+
+## 24. 1 Wires
+
+Les fils (wires) sont le moyen principal de relier des symboles.
+
+Caractéristiques :
+
+- ils doivent s’attacher *exclusivement* aux extrémités ou aux pins  
+- KiCad force automatiquement les angles 90° / 45° selon réglage  
+- ils se coupent automatiquement si un autre fil est placé au même point
+
+###### Connexions correctes
+
+symbol pin ────── wire ────── symbol pin
+
+
+###### Connexions incorrectes
+
+symbol pin ────────
+wire (touché visuellement mais non aligné)
+
+
+> 💡 **Astuce**  
+> Active l’outil **Highlight Net** (icône haute-tension) et clique sur un fil.  
+> → Toute la connexion réelle s’allume.  
+>  
+> Si quelque chose reste éteint, la connexion est *cassée*.
+
+---
+
+## 24. 2 Junctions (points de jonction)
+
+Un point vert (junction dot) indique une connexion explicite.
+
+Il sert à :
+
+- connecter deux fils se croisant  
+- connecter un fil à un autre fil qui passe sous lui  
+- clarifier les intentions du designer
+
+> 📄 *Image page 12 – Junction tool icon*  
+> Description : point vert utilisé pour marquer explicitement une connexion.
+
+###### Règle KiCad
+
+- Si un fil s’arrête exactement sur l’autre ➜ **pas besoin de junction**  
+- Si deux fils se croisent sans s’arrêter ➜ **il n’y a PAS connexion**  
+- Si tu veux une connexion au point de croisement ➜ **mettre une junction**
+
+---
+
+## 24. 3 No-Connection Flags
+
+Icône : croix bleue.
+
+Il indique à l’ERC :
+
+- "Je laisse volontairement ce pin non connecté."
+
+Sans ce flag, KiCad considère souvent un pin laissé en l’air comme une erreur.
+
+Situations où l’utiliser :
+
+- broche NC d’un composant  
+- broche inutilisée d’un microcontrôleur  
+- broche de configuration optionnelle  
+- pin d’un connecteur volontairement non utilisée
+
+> ⚠️ Les no-connect **ne créent pas de net**.  
+> Ils servent uniquement à éviter les faux positifs ERC.
+
+---
+
+## 25. Labels, Nets & Connectivity
+
+Il existe **3 types de labels** dans KiCad :
+
+1. **Local labels** (nom banal ex : SDA)  
+2. **Global labels** (nom partout ex : VCC, GND)  
+3. **Hierarchical labels** (liens entre parent/subsheet)
+
+---
+
+## 25. 1 Local Labels
+
+Syntaxe : `MY_SIGNAL`
+
+Caractéristiques :
+
+- valident uniquement **dans la feuille actuelle**
+- deux labels identiques = même net
+- utilisés pour organiser visuellement un schéma
+- ne traversent pas les sous-feuilles
+
+U1 SDA ───────────────┐
+├─ SDA
+U2 SDA ───────────────┘
+
+
+> 💡 Recommandation de pro  
+> Toujours utiliser des labels localisés pour les signaux internes.  
+>  
+> Les signals globaux (ex : SPI1_MOSI) ne doivent être globaux **que** si nécessaire.
+
+---
+
+## 25. 2 Global Labels
+
+Utilisés pour des nets présents dans tout le design.
+
+Exemples typiques :
+
+- `GND`
+- `VCC`
+- `3V3`
+- `5V`
+- `RESET`
+- `BOOT0`
+- `VBAT`
+
+Caractéristiques :
+
+- connectent toutes les occurrences du même nom dans toutes les feuilles  
+- évitent de tirer des fils partout  
+
+> ⚠️ **Risque**  
+> Trop de global labels = schéma difficile à maintenir.  
+>  
+> Pour un MCU, mieux vaut utiliser des **hierarchical labels**.
+
+---
+
+## 25. 3 Hierarchical Labels
+
+Ils servent à la communication :
+
+- d’une sous-feuille → vers la feuille parent  
+- ou inversement
+
+Ils doivent être associés à :
+
+- un label dans le fichier `.kicad_sch` de la sous-feuille  
+- un **hierarchical pin** sur le block sheet dans la feuille parent
+
+> 📄 *Image page 12 – Hierarchical label & pin tools*  
+> Description : icône symbole 'tag' et icône symbole carré (sheet pin).
+
+###### Fonctionnement
+
+Sous-feuille :
+
+[ label: TX ]
+
+
+Feuille parent :
+
+Subsheet block:
+pin: TX
+
+
+---
+
+## 25. 4 Synchronisation des sheet pins
+
+KiCad dispose d’un outil : **Synchronize hierarchical labels and pins**
+
+Il :
+
+- liste tous les labels existants dans les sous-feuilles  
+- permet d’ajouter automatiquement les pins correspondants  
+- évite les incohérences (erreur typique chez débutants)
+
+---
+
+## 25. 5 Net Names
+
+Les nets sont automatiquement nommés :
+
+- avec les labels  
+- ou des noms auto-générés (ex : `Net-(R3-Pad1)`)
+
+> 💡 **Bonne pratique**  
+> Toujours nommer les signaux importants (alimentations, bus, signaux logiques, clocks).
+
+---
+
+## 26. Net Classes
+
+Une **net class** regroupe des nets selon des propriétés électriques / PCB :
+
+- largeur de piste  
+- clearance  
+- via type  
+- via drill  
+- differential pairs  
+- contraintes high-speed
+
+Les net classes :
+
+- sont gérées dans Schematic Editor → Net Class directives  
+- sont poussées vers le PCB Editor lors du transfert
+
+---
+
+## 26. 1 Net Class Directive (in schematic)
+
+KiCad permet de définir dans le schéma :
+
+(net_class "POWER"
+(clearance 0.5mm)
+(trace_width 1mm)
+)
+
+
+Les directives permettent :
+
+- de donner des contraintes par net  
+- d’appliquer automatiquement des règles PCB high-speed  
+- de synchroniser schéma ↔ PCB plus proprement
+
+---
+
+## 27. Component Classes
+
+Une fonctionnalité permettant de catégoriser des composants selon :
+
+- leur rôle  
+- leur type électrique  
+- leur impact sur le design ERC
+
+Exemples :
+
+- Resistive components  
+- Power drivers  
+- Analog inputs  
+- Digital outputs  
+- Open drain pins
+
+Cela influence les vérifications ERC.
+
+---
+
+## 28. Graphics and Text
+
+Les schémas KiCad peuvent inclure :
+
+- rectangles  
+- cercles  
+- arcs  
+- lignes  
+- courbes Bézier  
+- images bitmap  
+- tables  
+- zones de texte
+
+> 💡 **Tip**  
+> Place toutes les notes importantes dans une zone texte (text box), jamais en champ “value” ou “reference”.
+
+---
+
+## 29. Schematic Editing Convenience Tools
+
+Les regroupements naturels :
+
+- alignement automatique  
+- duplication  
+- rotation en masse  
+- propriétés multiples via Properties Manager  
+- recherches avancées  
+- highlight net  
+- filtres de sélection
+
+---
+
+## 30. Schematic Setup
+
+L’outil **Schematic Setup** sert à configurer :
+
+- les pages  
+- le cartouche  
+- les règles ERC  
+- les net classes  
+- les paramètres de hiérarchie  
+- les symboles globaux par défaut (ex : GND)
+
+> 📄 *Image page 64 – Schematic Setup dialog*  
+> **Description** : fenêtre avec onglets Left/Right, options générales + ERC + net classes.
+
+---
+
+## 31. Opening Legacy Schematics
+
+KiCad peut ouvrir d’anciens formats :
+
+- EEschema v5  
+- EEschema v4  
+- certains formats intermédiaires
+
+💡 Lorsque tu charges un vieux projet, KiCad :
+
+- convertit automatiquement  
+- affiche les warnings  
+- peut perdre des composants obsolètes  
+- propose de remplacer par des symboles modernes
+
+---
+
+## 32. Hierarchical Schematics (Introduction)
+
+La hiérarchie permet :
+
+- de diviser un gros schéma en modules  
+- de réutiliser des sous-circuits  
+- de clarifier la structure fonctionnelle
+
+Types :
+
+- **Flat hierarchy** (rare)  
+- **Simple hierarchy** (1 occurrence par sous-feuille)  
+- **Complex hierarchy** (réutilisation multiple de la même sous-feuille)  
+
+---
+
+## 33. Adding Sheets to a Design
+
+Outil : **Add hierarchical sheet**
+
+Paramètres :
+
+- nom visible (sheet name)  
+- fichier associé (`mysheet.kicad_sch`)  
+
+KiCad crée automatiquement :
+
+- un symbole block sheet  
+- un fichier schéma correspondant  
+
+---
+
+## 34. Navigating Between Sheets
+
+Méthodes :
+
+- double-clic sur un symbol de sheet  
+- icône “go to parent sheet”  
+- panneau **Hierarchy Navigator** (à gauche)
+
+> 📄 *Image page 7 – left panel Hierarchy Navigator*  
+> Description : arbre avec root sheet → subsheets.
+
+---
+
+## 35. Electrical Connections Between Sheets
+
+###### Possibilités :
+
+- labels globaux  
+- labels hiérarchiques  
+- connexions implicites via power symbols  
+- réutilisation de sous-feuilles (complex hierarchy)
+
+---
+
+## 35. 1 Global vs Hierarchical
+
+| Type | Traverse hiérarchie ? | Usage recommandé |
+|------|------------------------|-------------------|
+| Global | Oui | alimentations, signaux spéciaux |
+| Hierarchical | Oui (parent ↔ enfant) | signaux MCU, bus interne |
+| Local | Non | signaux internes à une feuille |
+
+---
+
+## 35. 2 Examples
+
+###### Simple hierarchy
+
+Root sheet
+├── Power sheet
+└── MCU sheet
+
+
+###### Complex hierarchy (rare mais très puissant)
+
+Root sheet
+├── Sensor sheet (used 4 times)
+├── ADC sheet
+└── PSU sheet
+
+Chaque instance d’une même sous-feuille doit recevoir un **path unique**.
+
+---
+
+## 36. Hierarchical Design Examples
+
+KiCad fournit des exemples dans :
+
+/usr/share/kicad/demos/schematics/
+
+
+Ils montrent :
+
+- hiérarchie propre  
+- labels bien organisés  
+- gestion correcte des alimentations  
+- pattern réutilisables pour gros projets
+
+---
+
+## 37. Inspecting a Schematic
+
+Lorsqu’un schéma grandit, tu ne peux plus “juste le lire”.  
+KiCad inclut des outils d’inspection extrêmement puissants pour :
+
+- rechercher (texte, références, valeurs, nets…)  
+- naviguer entre objets  
+- visualiser un net  
+- traverser la hiérarchie  
+- identifier les erreurs potentielles  
+
+---
+
+## 37. 1 The Find Tool
+
+Accessible via :
+
+- Edit → Find  
+- ou hotkey : **Ctrl+F**  
+
+Il permet de rechercher :
+
+- symboles  
+- références (R12, U3…)  
+- valeurs (10k, LM358…)  
+- labels  
+- nets  
+- textes  
+- propriétés diverses
+
+> 💡 **Astuce pro**  
+> Si tu tapes `U3` :  
+> - premier *match* → U3A  
+> - suivant → U3B  
+> - puis U3C, U3D  
+> → pratique pour naviguer dans les multi-unités.
+
+Le panneau Find supporte :
+
+- regex  
+- correspondance exacte  
+- recherche dans les champs cachés  
+- recherche dans toute la hiérarchie (option)
+
+---
+
+## 38. Search Panel
+
+Le Search panel (dockable panel) est une version “vivante” du Find :
+
+- il effectue la recherche en continu au fur et à mesure que tu tapes  
+- il liste tous les résultats simultanément  
+- tu peux double-cliquer un résultat pour t’y rendre  
+- il peut ouvrir les sous-feuilles concernées automatiquement
+
+> 📄 *Image page 76 – Search Panel*  
+> **Description** : panneau vertical avec champ texte + liste de résultats.
+
+---
+
+## 39. Net Highlighting
+
+L’un des outils les plus importants de KiCad.
+
+Il met en couleur :
+
+- tous les fils d’un net  
+- tous les labels correspondants  
+- tous les symboles connectés  
+- et si le PCB est ouvert → **toutes les pistes correspondantes**
+
+Hotkey : non standard, mais accessible via icône haute-tension.
+
+###### Utilisation :
+
+- clique sur un fil ou label  
+- tout le net s’illumine  
+- reclique sur fond vide → reset
+
+> 💡 **Astuce essentielle**  
+> Un schéma visuellement correct peut cacher des ruptures microscopiques.  
+>  
+> Le *net highlight* ne ment jamais.  
+> → Si une partie ne s’allume pas, elle n’est pas connectée.
+
+---
+
+## 40. Net Navigator
+
+Outil très pratique pour gros designs (MCU + multiples modules).
+
+Il affiche :
+
+- la liste des nets  
+- leur nombre de connexions  
+- tous les objets appartenant à un net  
+- accès direct à chaque occurrence
+
+Résout des erreurs typiques :
+
+- un label mal orthographié (`SCL` vs `SCLK`)  
+- un label local au lieu d’un global  
+- un fil isolé  
+- un symbole mal relié
+
+---
+
+## 41. Cross-Probing Schematic ↔ PCB
+
+Lorsque la fenêtre PCB Editor est ouverte :
+
+- sélectionner un symbole dans le schéma → surligné dans le PCB  
+- sélectionner un pad sur le PCB → surligné dans le schéma  
+- sélectionner un net → surligné dans les deux
+
+> 📄 *Image page 89 – Cross-Probing*  
+> **Description** : schéma et PCB côte à côte, net surligné en jaune.
+
+###### Activation
+
+- Dans PCB Editor : Inspect → Cross Probe  
+- Dans Schematic Editor : View → Cross Probe Mode
+
+###### Modes
+
+1. Highlight only  
+2. Zoom to object  
+3. Center and select  
+
+> 💡 **Tip** : Idéal pour retrouver un composant mal placé ou mal routé.
+
+---
+
+## 42. Electrical Rules Check (ERC)
+
+L’ERC vérifie la validité électrique du schéma.
+
+⚡ C’est **obligatoire** avant de générer un PCB.
+
+---
+
+## 42. 1 Types d’erreurs détectées
+
+###### ⚠️ Hard errors :
+
+- deux sorties en conflit  
+- alimentation manquante  
+- pin “power input” non alimentée  
+- pins partagées alors qu’elles ne doivent pas l’être
+
+###### ⚠️ Warnings :
+
+- pin non connectée (sans No-Connect flag)  
+- type de pin incohérent  
+- net sans driver  
+- global label isolé
+
+###### ℹ️ Infos :
+
+- connexions implicites  
+- symboles DNP  
+- symboles exclus du PCB ou BOM  
+
+---
+
+## 42. 2 ERC Configuration
+
+Dans **Schematic Setup → Electrical Rules Checker** :
+
+Tu peux configurer :
+
+- warning vs error  
+- règles spéciales pour signaux d’horloge  
+- commutation autorisée pour certaines pins (open drain / passive / tri-state)  
+- tolérances d’alimentation (ex : VDD = 3.3V mais alimenté via net “+3V3”)  
+- règles custom (avancé)
+
+---
+
+## 42. 3 ERC Markers
+
+Les erreurs apparaissent dans le schéma comme :
+
+- symbole ⚡  
+- croix rouge  
+- avertissement jaune  
+- lien vers un message détaillé
+
+Chaque erreur peut être :
+
+- ignorée temporairement  
+- marquée comme acceptée  
+- corrigée directement via un double-clic
+
+> 💡 **Astuce**  
+> Un bon design = **ERC = 0 errores**  
+> (warnings permis dans certains cas, mais jamais des errors)
+
+---
+
+## 43. Assigning Footprints
+
+L’assignation des empreintes est un moment clé du workflow.
+
+KiCad propose **3 méthodes** :
+
+---
+
+## 43. 1 Assigning Footprints in Symbol Properties
+
+Méthode simple : pour un composant isolé.
+
+Via :
+
+- Symbol Properties → champ Footprint → bouton **Browse...**
+
+Utile pour :
+
+- remplacer une empreinte  
+- vérifier les footprints filter  
+- assigner une empreinte non standard
+
+---
+
+## 43. 2 Assigning Footprints While Placing Symbols
+
+Si un symbole possède :
+
+- un champ Footprint par défaut  
+- ou des “footprint filters”
+
+→ KiCad peut assigner automatiquement l’empreinte correspondante lors du placement.
+
+Exemple :
+
+Symbol “R” (résistance) possède :
+
+- footprint filter : `*0402*`, `*0603*`, `*0805*`
+
+Tu peux choisir le package désiré directement dans le Symbol Chooser.
+
+---
+
+## 43. 3 Assign Footprints Tool (the powerful way)
+
+Outil : **Tools → Assign Footprints…**
+
+C’est l’outil graphique le plus puissant :
+
+- vue en tableau de tous les symboles  
+- aperçu dynamique de l’empreinte  
+- filtres par librairie  
+- recherche rapide  
+- assignation en masse  
+- gestion de multiples footprints compatibles
+
+> 📄 *Image page 106 – Assign Footprints tool*  
+> **Description** : large tableau, listes de footprints, aperçu 2D.
+
+###### Utilité
+
+- assigner 100+ composants en quelques minutes  
+- changer des modèles entiers (tous les 0805 → 0603)  
+- comparer plusieurs footprints selon l'encombrement  
+- nettoyer un design avant routage
+
+---
+
+## 44. Forward and Back Annotation
+
+Le lien entre schéma ↔ PCB est **bidirectionnel**.
+
+---
+
+## 44. 1 Forward Annotation (Schematic → PCB)
+
+Outil : **Update PCB from Schematic**
+
+Ce transfert envoie :
+
+- les empreintes  
+- les propriétés des nets  
+- les classes de nets  
+- les renames de références  
+- les suppressions / ajouts de composants  
+- les ERC messages liés aux footprints manquants
+
+> 📄 *Image page 109 – Update PCB from Schematic*  
+> **Description** : fenêtre montrant un diff des composants et nets.
+
+###### Modes
+
+- Update footprints  
+- Update nets  
+- Re-align annotation  
+- Remove orphan footprints  
+- Keep existing footprints placement (important)
+
+---
+
+## 44. 2 Back Annotation (PCB → Schematic)
+
+Outil : **Update Schematic from PCB**
+
+Utilisé pour :
+
+- renommer automatiquement les références selon emplacement PCB  
+- importer des suppressions depuis le PCB  
+- synchroniser les nets si des renames ont eu lieu côté routage
+
+> ⚠️ Peu utilisé en pratique  
+> La majorité des designers préfèrent toujours faire les modifications **depuis le schéma**, jamais depuis le PCB.  
+>  
+> Mais KiCad supporte le back-annotation complètement.
+
+---
+
+## 45. Bill of Materials Generation (BOM)
+
+KiCad peut générer la BOM via :
+
+- scripts Python  
+- transformations XSLT  
+- plugins tiers (ex : InvenTree, DigiKey Assistant)
+
+Formats typiques :
+
+- CSV  
+- TSV  
+- XML  
+- JSON  
+- HTML (BOM interactive)
+
+Fichiers générés depuis :
+
+**Tools → Generate BOM**
+
+---
+
+## 46. Netlist Generation
+
+Encore utile pour certains outils externes.  
+Le netlist est compatible :
+
+- SPICE  
+- divers routeurs externes  
+- scripts personnalisés
+
+Mais le workflow moderne de KiCad n’utilise plus vraiment cette étape.
+
+---
+
+## 47. Symbols and Symbol Libraries
+
+Les symboles sont au cœur du Schematic Editor.  
+KiCad offre une gestion flexible des bibliothèques :
+
+- bibliothèques globales (accessibles à tous les projets)  
+- bibliothèques spécifiques au projet  
+- bibliothèques internes (fichiers `.kicad_sym`)  
+- bibliothèques réseau / cloud  
+- bibliothèques de fabricants  
+
+Cette section décrit :
+
+1. Gestion des librairies  
+2. Création et édition de symboles  
+3. Navigation dans les bibliothèques  
+4. Design blocks (blocs réutilisables de schéma)
+
+---
+
+## 48. Managing Symbol Libraries
+
+Outil :  
+**Preferences → Manage Symbol Libraries**
+
+> 📄 *Image page 140 – Manage Symbol Libraries*  
+> Description : deux tables (Global / Project), colonnes Library Name, Nickname, Path, Options.
+
+---
+
+## 48. 1 Library Tables
+
+Il existe **2 tables** :
+
+###### 🟦 Global Library Table (`sym-lib-table`)
+- utilisée dans tous les projets KiCad  
+- installée par défaut lors de l’installation  
+- contient les symboles KiCad officiels  
+
+###### 🟩 Project Library Table
+- spécifique au projet en cours  
+- stockée dans le dossier du projet  
+- portable avec le projet  
+- recommandée pour symboles custom  
+
+> 💡 **Bonne pratique**  
+> Toujours mettre tes symboles personnalisés dans la **project table**, pas dans la globale.
+
+---
+
+## 48. 2 Library Entry Fields
+
+Chaque ligne dans la table contient :
+
+- **Nickname** : nom interne utilisé dans KiCad  
+- **Library Path** : fichier `.kicad_sym`  
+- **Plugin Type** : typiquement “KiCad”  
+- **Options** : flags spéciaux (lecture seule, réseau…)
+
+---
+
+## 48. 3 Add / Remove / Move Libraries
+
+Boutons :
+
+- **Add existing library**  
+- **Create new library…**  
+- **Remove library**  
+- **Up/Down** (réordonne les libs — utile pour la recherche)
+
+---
+
+## 48. 4 Library Location & Portability
+
+Une librairie peut être :
+
+- dans ton répertoire utilisateur  
+- dans le répertoire du projet  
+- sur une clé USB  
+- sur un NAS / NFS  
+- dans un repository Git
+
+KiCad ne charge que les chemins référencés dans la table.  
+
+> 💡 **Astuce Git**  
+> Ajoute tes librairies `.kicad_sym` dans un repo avec ta team → meilleur workflow collaboratif.
+
+---
+
+## 49. Creating and Editing Symbols
+
+Outil :  
+**Tools → Symbol Editor**  
+ou clic droit sur un symbole → **Edit Library Symbol**
+
+> 📄 *Image page 143 – Symbol Editor interface*  
+> Description : grande zone centrale, toolbox à droite (pins, graphics), tree de librairies à gauche.
+
+---
+
+## 49. 1 Symbol Structure (Important)
+
+Un symbole KiCad contient :
+
+- **Graphical body** (lignes, arcs, boîtes)  
+- **Pins** (nom, numéro, type électrique, orientation)  
+- **Fields** (Reference, Value, Footprint, Datasheet, Custom fields)  
+- **Aliases** (noms alternatifs)  
+- **Footprint filters**  
+- **Default Footprint**  
+- **Description / Keywords**  
+- **Properties SPICE (simulation)**  
+
+---
+
+## 49. 2 Creating a New Symbol
+
+Étapes :
+
+1. Manage Symbol Libraries → Create Library  
+2. Symbol Editor → File → New Symbol  
+3. Choisir la librairie de destination  
+4. Nom du symbole  
+5. Placement du “anchor point”  
+6. Création du graphisme  
+7. Placement des pins  
+8. Définition des champs  
+9. Sauvegarde
+
+> 💡 **Tip : anchor point**  
+> Toujours placer l’origine du symbole sur le pin 1 ou sur le centre logique du composant.  
+>  
+> Cela facilite la rotation et l’alignement sur la grille.
+
+---
+
+## 49. 3 Pin Definition
+
+Chaque pin comporte :
+
+- **Name** : SDA, VCC, OUT, etc.  
+- **Number** : 1, 2, 3… (mapping PCB)  
+- **Electrical Type** :
+  - Input  
+  - Output  
+  - Bidirectional  
+  - Passive  
+  - Power Input  
+  - Power Output  
+  - Open Drain  
+  - Open Collector  
+  - Tri-state  
+  - Not Connected  
+
+> ⚠️ L’ERC dépend entièrement du type de pin.  
+> Un mauvais type = faux positifs ou absence de détection d’erreurs.
+
+---
+
+## 49. 4 Pin Orientation & Length
+
+Orientations :
+
+- Up  
+- Down  
+- Left  
+- Right  
+
+La longueur par défaut est 100 mil.
+
+> 💡 **Bonne pratique**  
+> Alignement uniforme = schéma plus lisible + placement autoroutable plus facile.
+
+---
+
+## 49. 5 Symbol Graphics
+
+Outils :
+
+- rectangle  
+- ligne  
+- arc  
+- courbe Bézier  
+- cercle  
+- texte  
+- polygone
+
+Ces éléments **n’ont aucun rôle électrique** — ils servent uniquement au visuel.
+
+---
+
+## 49. 6 Symbol Fields
+
+Champs standards :
+
+- Reference : R?, U?, C?  
+- Value : 10k, LM358, etc.  
+- Footprint  
+- Datasheet  
+- Fields custom (Manufacturer, MPN, Supplier…)
+
+Tu peux rendre un champ :
+
+- visible / caché  
+- auto-positionné  
+- bold / italic  
+- coloré  
+
+---
+
+## 49. 7 Aliases
+
+Les aliases servent à créer plusieurs symboles ayant :
+
+- le même graphisme  
+- les mêmes pins  
+- mais un nom différent
+
+Exemple :
+
+Symboles R, R_US → alias  
+Symboles BC547, BC548 → alias  
+
+---
+
+## 49. 8 Footprint Filters
+
+Exemples :
+
+SOIC*
+SOT-23*
+DIP?
+0805
+
+
+Ils permettent au Footprint Assignment Tool d’afficher uniquement les empreintes pertinentes.
+
+---
+
+## 49. 9 Symbol Properties SPICE
+
+Si un symbole doit être simulé :
+
+- Model  
+- Prefix (R, C, L, Q, M…)  
+- Parameters  
+- Subcircuit file  
+- Initial conditions  
+
+---
+
+## 50. Browsing Symbol Libraries
+
+La colonne de gauche dans le Symbol Editor affiche :
+
+- toutes les bibliothèques  
+- les symboles qu’elles contiennent  
+- leur hiérarchie interne  
+
+Tu peux :
+
+- rechercher  
+- filtrer  
+- copier/coller des symboles entre libs  
+- dupliquer des symboles  
+- renommer des symboles  
+
+---
+
+## 51. Schematic Design Blocks
+
+Les **design blocks** sont des morceaux de schémas réutilisables :
+
+- filtres RC  
+- alimentations complètes  
+- drivers moteurs  
+- buffers logiques  
+- blocs d’interface USB  
+- sections analogiques complètes
+
+Ils sont composés de :
+
+- symboles  
+- fils  
+- labels  
+- texte  
+- annotations  
+
+> 📄 *Image page 171 – Design Block*  
+> Description : un bloc de schéma comprenant un régulateur 3.3V avec capaciteurs.
+
+---
+
+## 51. 1 Using Design Blocks
+
+Insertion :
+
+**Place → Add Design Block**
+
+Tu peux :
+
+- placer un bloc existant  
+- importer un bloc depuis un autre projet  
+- créer ta propre bibliothèque de blocs
+
+> 💡 **Astuce workflow**  
+> Si tu réutilises des fonctions analogiques (LDO, op-amps, etc.),  
+> crée un dossier `design_blocks/` dans ton repo.
+
+---
+
+## 51. 2 Saving and Managing Blocks
+
+Tu peux sauvegarder :
+
+- un ensemble d’objets sélectionnés  
+- une feuille entière  
+- une hiérarchie complète
+
+Sous forme de fichier `.kicad_sch` ou `.kicad_dbl`.
+
+---
+
+## 52. Simulator (SPICE Integration)
+
+KiCad intègre **ngspice**, un simulateur SPICE mature.
+
+La simulation supporte :
+
+- DC  
+- AC  
+- Transient  
+- Parametric sweeps  
+- Noise analysis  
+- Fourier analysis  
+- Mixed-signal behavior (certaines limites)  
+
+> 📄 *Image page 178 – Simulation Model Editor*  
+> Description : champs pour assigner les modèles SPICE.
+
+---
+
+## 52. 1 Assigning Models
+
+Pour simuler un symbole, il faut :
+
+- un “Model” (sous-circuit, `.model`, `.subckt`)  
+- ou une bibliothèque SPICE externe (.lib)  
+- un préfixe SPICE (R, C, L, D, Q, M…)  
+
+Le panneau Simulation Model Editor inclut :
+
+- champs pour modèle  
+- liste des pins (pin mapping symbole ↔ modèle)  
+- sélection du type (primitive vs subcircuit)
+
+---
+
+## 52. 2 Value Notation for SPICE
+
+KiCad utilise les suffixes standard SPICE :
+
+| Lettre | Facteur | Notes |
+|--------|---------|--------|
+| K | 10³ | kilo |
+| M | 10⁶ | mega |
+| MEG | 10⁶ | meg (alternative) |
+| U | 10⁻⁶ | micro |
+| N | 10⁻⁹ | nano |
+| P | 10⁻¹² | pico |
+| F | 10⁻¹⁵ | femto |
+
+> ⚠️ **Attention**  
+> `m` en SPICE = milli (10⁻³)  
+> Donc 10m = 0.01, pas 10 mega.
+
+---
+
+## 52. 3 SPICE Directives
+
+Pour ajouter des directives SPICE :
+
+- Place → Add SPICE Directive  
+- ou simplement un champ texte préfixé par `.`, ex :
+
+.model D1 D(Is=1e-12 Rs=0.1)
+.include mymodels.lib
+.lib opamp_models.lib
+.ic V(out)=0
+.tran 1us 5ms
+.ac dec 20 1Hz 1MHz
+
+
+---
+
+## 52. 4 Running Simulations
+
+Menu : **Inspect → Simulator**
+
+L’interface propose :
+
+- choix du type de simulation  
+- sélection des signaux à tracer  
+- curseurs de mesure  
+- graphes multi-axes  
+- affichage de valeurs précises  
+- simulation step-by-step  
+
+> 📄 *Image page 188 – Simulation Graph*  
+> Description : courbes superposées V(out), V(in).
+
+---
+
+## 52. 5 Viewing Results
+
+Type de résultats :
+
+- Time domain waveforms  
+- Frequency domain plots  
+- Bode plots  
+- FFT / harmonics  
+- Parametric sweep surfaces  
+
+Graphes interactifs :
+
+- zoom  
+- multi-signaux  
+- export CSV  
+- export PNG  
+- curseurs delta  
+
+---
+
+## 52. 6 Tuning Components
+
+Il existe un mode interactif :
+
+- clic droit sur une résistance → Adjust value  
+- la simulation se met à jour en direct (selon mode)
+
+> 💡 Très utile pour prototyper des filtres RC / amplificateurs.
+
+---
+
+## 52. 7 Saving Simulation Setups
+
+Les configurations peuvent être sauvegardées dans des fichiers annexes :
+
+- directives  
+- valeurs  
+- plots configurés  
+- couleurs  
+- sélections  
+
+---
+
+## 52. 8 Exporting Sim Data
+
+Formats :
+
+- CSV  
+- RAW SPICE  
+- images  
+- fichiers de paramètres
+
+Idéal pour export vers Python / MATLAB.
+
+---
+
+## 52. 9 Troubleshooting SPICE
+
+Problèmes fréquents :
+
+- modèle incompatible  
+- mauvais prefix (ex : `R` vs `X`)  
+- pin mapping incorrect  
+- convergence failures  
+- step trop petit / trop grand  
+- composants idéaux non réalistes
+
+Solutions :
+
+- adapter les paramètres `.options`  
+- ajouter résistances parasites  
+- ajuster timestep  
+- vérifier les polarisations
+
+---
+
+## 53. Helpful Hints
+
+Le manuel propose divers conseils :
+
+- toujours vérifier l’ERC  
+- utiliser “Highlight Net” avant export PCB  
+- structurer les signaux via labels  
+- utiliser des champs custom pour la production  
+- préférer les hierarchical sheets aux pages géantes  
+- utiliser le Properties Manager pour modifications en masse
+
+---
+
+## 54. Advanced Topics (brief overview)
+
+Cette section du manuel couvre :
+
+- configuration avancée  
+- text variables  
+- database libraries  
+- HTTP libraries  
+- custom netlist formats  
+- custom BOM export  
+- action scripts  
+- macros internes  
+
+---
+
+## 55. Actions Reference
+
+Liste exhaustive des actions disponibles dans KiCad, avec hotkeys.
+
+Exemples :
+
+- Place wire  
+- Edit text  
+- Add symbol  
+- Open library editor  
+- Highlight net  
+- Zoom to fit  
+- Align items  
+- Update footprints  
+- Move with drag  
+
+---
+
+## 56. Common Commands
+
+Commandes KiCad courantes, triées par contexte :
+
+- académiques  
+- électriques  
+- graphiques  
+- hiérarchiques  
+- simulation  
+- annotation  
+- routage (quand PCB Editor ouvert)
+
+---

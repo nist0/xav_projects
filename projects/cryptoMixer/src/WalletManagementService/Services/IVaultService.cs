@@ -6,4 +6,5 @@ public interface IVaultService
 {
     Task<ExtKey> GetMasterKeyAsync();
     Task<string> SignTransactionHashAsync(string keyName, string hashToSignBase64);
+    Task SetMasterKeyAsync(ExtKey extKey);
 }

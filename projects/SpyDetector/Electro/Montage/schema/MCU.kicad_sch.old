@@ -1,0 +1,14 @@
+(kicad_sch
+  (version 20211014)
+  (generator "eeschema")
+
+  (paper "A4")
+
+  ;; Feuille MCU – ESP32-S3-CAM
+  ;; Place ton symbole ESP32_S3_CAM et ajoute des global labels :
+  ;;  - +3V3, GND
+  ;;  - RF_LEVEL (vers AD8318)
+  ;;  - I2C_SCL, I2C_SDA (vers OLED)
+  ;;  - LASER_CTRL, IR_CTRL, BUZZ_CTRL, MODE_BTN, etc.
+
+)

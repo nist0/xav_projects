@@ -1,0 +1,22 @@
+(kicad_sch
+  (version 20211014)
+  (generator "eeschema")
+
+  (paper "A4")
+
+  ;; Feuille UI – Interface utilisateur
+  ;; À placer :
+  ;;  - OLED SSD1306 en I2C
+  ;;      * SCL → global label I2C_SCL
+  ;;      * SDA → global label I2C_SDA
+  ;;      * VCC → +3V3, GND
+  ;;
+  ;;  - Buzzer piezo
+  ;;      * une patte → BUZZ_CTRL (GPIO MCU)
+  ;;      * autre patte → GND ou +3V3 selon ton montage
+  ;;
+  ;;  - Bouton MODE
+  ;;      * un côté → MODE_BTN (GPIO MCU)
+  ;;      * autre côté → GND (pull-up interne)
+
+)

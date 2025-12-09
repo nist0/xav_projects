@@ -48,7 +48,34 @@ if (addr is null)
 
 Console.WriteLine($"[OK] Generated address: {addr.Address} (path {addr.DerivationPath})");
 
+// 2) Create a new wallet (mnemonic + xprv/xpub + first address)
+Console.WriteLine("Calling WMS /api/wallets/new...");
+var walletReq = new { network = "testnet", importToVaultIfDisabled = true };
+var walletJson = JsonConvert.SerializeObject(walletReq);
+var walletContent = new StringContent(walletJson, Encoding.UTF8, "application/json");
+
+var walletResponse = await http.PostAsync($"{wmsBaseUrl.TrimEnd('/')}/api/wallets/new", walletContent);
+Console.WriteLine("HTTP status (wallet create): " + walletResponse.StatusCode);
+var walletBody = await walletResponse.Content.ReadAsStringAsync();
+Console.WriteLine("Response body (wallet): " + walletBody);
+
+if (!walletResponse.IsSuccessStatusCode)
+{
+    Console.WriteLine("[KO] /api/wallets/new returned an error.");
+    return;
+}
+
+var wallet = JsonConvert.DeserializeObject<WalletResponseDto>(walletBody);
+if (wallet is null)
+{
+    Console.WriteLine("Failed to deserialize wallet response");
+    return;
+}
+
+Console.WriteLine($"[OK] Created wallet (network {wallet.Network}). FirstAddress: {wallet.FirstAddress}");
+
 Console.WriteLine("=== End of harness run ===");
 
 
 public sealed record AddressResponseDto(string Address, string DerivationPath);
+public sealed record WalletResponseDto(string Mnemonic, string XPrv, string XPub, string FirstAddress, string Network);

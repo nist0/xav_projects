@@ -1,0 +1,77 @@
+(kicad_sch (version 20211014) (generator eeschema)
+
+  (uuid aaaaaaaa-1111-2222-3333-444444444444)
+
+  (paper "A4")
+
+  (title_block
+    (title "SpyDetector - Top Level")
+    (company "APS Yann Project")
+  )
+
+  (sheet (at 40 40) (size 60 35) (uuid a1111111-2222-3333-4444-555555555555)
+    (property "Sheet name" "Power"
+      (at 40 30 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid a1111111-2222-3333-4444-555555555556)
+    )
+    (property "Sheet file" "Power.kicad_sch"
+      (at 40 32.5 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid a1111111-2222-3333-4444-555555555557)
+    )
+  )
+
+  (sheet (at 140 40) (size 60 35) (uuid b1111111-2222-3333-4444-555555555555)
+    (property "Sheet name" "MCU"
+      (at 140 30 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid b1111111-2222-3333-4444-555555555556)
+    )
+    (property "Sheet file" "MCU.kicad_sch"
+      (at 140 32.5 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid b1111111-2222-3333-4444-555555555557)
+    )
+  )
+
+  (sheet (at 40 100) (size 60 35) (uuid c1111111-2222-3333-4444-555555555555)
+    (property "Sheet name" "RF"
+      (at 40 90 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid c1111111-2222-3333-4444-555555555556)
+    )
+    (property "Sheet file" "RF.kicad_sch"
+      (at 40 92.5 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid c1111111-2222-3333-4444-555555555557)
+    )
+  )
+
+  (sheet (at 140 100) (size 60 35) (uuid d1111111-2222-3333-4444-555555555555)
+    (property "Sheet name" "Optical"
+      (at 140 90 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid d1111111-2222-3333-4444-555555555556)
+    )
+    (property "Sheet file" "Optical.kicad_sch"
+      (at 140 92.5 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid d1111111-2222-3333-4444-555555555557)
+    )
+  )
+
+  (sheet (at 90 160) (size 60 35) (uuid e1111111-2222-3333-4444-555555555555)
+    (property "Sheet name" "UI"
+      (at 90 150 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid e1111111-2222-3333-4444-555555555556)
+    )
+    (property "Sheet file" "UI.kicad_sch"
+      (at 90 152.5 0)
+      (effects (font (size 1.27 1.27)))
+      (uuid e1111111-2222-3333-4444-555555555557)
+    )
+  )
+
+)

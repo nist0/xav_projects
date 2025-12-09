@@ -1,0 +1,16 @@
+(kicad_sch
+  (version 20211014)
+  (generator "eeschema")
+
+  (paper "A4")
+
+  ;; Feuille RF – AD8318 + antenne
+  ;; À placer :
+  ;;  - module AD8318
+  ;;  - connecteur ANT
+  ;;  - alim +5V (ou 3V3 selon ton module)
+  ;;  - filtre RC sur la sortie
+  ;;  - global label "RF_LEVEL" vers la feuille MCU
+  ;;  - global labels +5V / GND
+
+)

@@ -1,0 +1,47 @@
+(kicad_symbol_lib
+  (version 20211014)
+  (generator "ChatGPT-APS")
+
+  (symbol "ESP32_S3_CAM"
+    (pin_names (offset 1.27))
+    (in_bom yes)
+    (on_board yes)
+
+    (property "Reference" "U" (id 0)
+      (at 0 12.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "ESP32-S3-CAM" (id 1)
+      (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2)
+      (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+
+    (symbol "ESP32_S3_CAM_0_1"
+
+      (rectangle (start -12.7 10.16) (end 12.7 -10.16)
+        (stroke (width 0.15) (type default))
+        (fill (type none))
+      )
+
+      (pin input line (at -15.24 8.89 180) (length 2.54) (name "3V3") (number "1"))
+      (pin input line (at -15.24 6.35 180) (length 2.54) (name "GND") (number "2"))
+      (pin input line (at -15.24 3.81 180) (length 2.54) (name "EN") (number "3"))
+      (pin input line (at -15.24 1.27 180) (length 2.54) (name "GPIO0") (number "4"))
+      (pin input line (at -15.24 -1.27 180) (length 2.54) (name "GPIO1/U0TXD") (number "5"))
+      (pin input line (at -15.24 -3.81 180) (length 2.54) (name "GPIO2/U0RXD") (number "6"))
+      (pin input line (at -15.24 -6.35 180) (length 2.54) (name "GPIO3") (number "7"))
+
+      (pin input line (at 15.24 8.89 0) (length 2.54) (name "GPIO4") (number "8"))
+      (pin input line (at 15.24 6.35 0) (length 2.54) (name "GPIO5") (number "9"))
+      (pin input line (at 15.24 3.81 0) (length 2.54) (name "GPIO6") (number "10"))
+      (pin input line (at 15.24 1.27 0) (length 2.54) (name "GPIO7") (number "11"))
+      (pin input line (at 15.24 -1.27 0) (length 2.54) (name "GPIO8") (number "12"))
+      (pin input line (at 15.24 -3.81 0) (length 2.54) (name "GPIO9") (number "13"))
+      (pin input line (at 15.24 -6.35 0) (length 2.54) (name "5V") (number "14"))
+    )
+  )
+)

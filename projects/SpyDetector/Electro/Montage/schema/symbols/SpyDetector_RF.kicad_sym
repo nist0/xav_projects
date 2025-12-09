@@ -1,0 +1,44 @@
+(kicad_symbol_lib
+  (version 20211014)
+  (generator "ChatGPT-APS")
+
+  (symbol "AD8318_Module"
+    (pin_names (offset 1.27))
+    (in_bom yes)
+    (on_board yes)
+
+    (property "Reference" "U" (id 0)
+      (at 0 7.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+
+    (property "Value" "AD8318_Module" (id 1)
+      (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+
+    (property "Footprint" "" (id 2)
+      (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27)))
+    )
+
+    (property "Datasheet" "" (id 3)
+      (at 0 -12.7 0)
+      (effects (font (size 1.27 1.27)))
+    )
+
+    (rectangle
+      (start -5.08 5.08)
+      (end 5.08 -5.08)
+      (stroke (width 0.15))
+      (fill
+        (type none)
+      )
+    )
+
+    (pin passive line (at -7.62 3.81 0) (length 2.54) (name "VCC")  (number "1"))
+    (pin passive line (at -7.62 1.27 0) (length 2.54) (name "GND")  (number "2"))
+    (pin passive line (at -7.62 -1.27 0) (length 2.54) (name "VOUT") (number "3"))
+    (pin passive line (at -7.62 -3.81 0) (length 2.54) (name "RFIN") (number "4"))
+  )
+)

@@ -1,0 +1,16 @@
+(kicad_sch
+  (version 20211014)
+  (generator "eeschema")
+
+  (paper "A4")
+
+  ;; Feuille Optical – Laser rouge + IR 940 nm
+  ;; À placer :
+  ;;  - Laser 5 mW (module)
+  ;;  - Array de LEDs IR 3535
+  ;;  - Transistors NPN (2N2222 ou SMD équivalent)
+  ;;  - résistances de limitation
+  ;;  - global labels LASER_CTRL, IR_CTRL (provenant de la MCU)
+  ;;  - global labels +5V / +3V3 / GND selon les cas
+
+)
