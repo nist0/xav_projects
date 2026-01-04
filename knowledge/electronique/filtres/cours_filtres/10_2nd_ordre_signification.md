@@ -25,10 +25,8 @@ Un système du second ordre est décrit par une équation de la forme :
 
 $$
 \frac{d^2 y(t)}{dt^2}
-
 + a\,\frac{dy(t)}{dt}
 + b\,y(t)
-
 = c\,x(t)
 $$
 

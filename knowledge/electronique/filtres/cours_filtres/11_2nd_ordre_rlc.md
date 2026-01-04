@@ -71,10 +71,8 @@ En substituant :
 
 $$
 LC \frac{d^2 u_C(t)}{dt^2}
-
 + RC \frac{du_C(t)}{dt}
 + u_C(t)
-
 = u_e(t)
 $$
 
@@ -86,10 +84,8 @@ On écrit l’équation sous la forme standard :
 
 $$
 \frac{d^2 u_C}{dt^2}
-
 + 2\zeta\omega_0 \frac{du_C}{dt}
 + \omega_0^2 u_C
-
 = \omega_0^2 u_e
 $$
 

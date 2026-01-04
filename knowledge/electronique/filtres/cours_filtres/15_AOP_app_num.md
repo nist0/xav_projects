@@ -96,9 +96,7 @@ $$
 H(j\omega)
 = \frac{K \frac{j\omega}{\omega_0}}
 {1 + \frac{j\omega}{Q\omega_0}
-
 + \left(\frac{j\omega}{\omega_0}\right)^2}
-
 $$
 
 où :

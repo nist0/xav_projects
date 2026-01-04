@@ -27,10 +27,8 @@ Tout système linéaire du second ordre peut s’écrire sous la forme :
 
 $$
 \frac{d^2 y(t)}{dt^2}
-
 + 2\zeta \omega_0 \frac{dy(t)}{dt}
 + \omega_0^2 y(t)
-
 = K \omega_0^2 x(t)
 $$
 

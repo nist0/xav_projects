@@ -20,8 +20,8 @@ tout ce qui précède y est mobilisé.
 
 ## 13.2 Cahier des charges de départ
 
-On se donne la spécification suivante (réaliste et volontairement simple) :
-
++ \frac{R}{L} j\omega
++ \frac{1}{LC}}
 - type de filtre : **passe-bande**
 - fréquence centrale :  
 
@@ -81,10 +81,9 @@ $$
 H(j\omega)
 = \frac{j\omega \frac{R}{L}}
 {(j\omega)^2
-
 + \frac{R}{L} j\omega
-+ \frac{1}{LC}}
-
+\; + \frac{R}{L} j\omega
+\; + \frac{1}{LC}}
 $$
 
 ---
