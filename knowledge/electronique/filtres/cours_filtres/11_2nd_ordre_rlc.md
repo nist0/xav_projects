@@ -192,12 +192,7 @@ Ce régime est central en électronique et en RF.
 La fonction de transfert s’écrit :
 
 $$
-H(j\omega)
-= \frac{\omega_0^2}{(j\omega)^2
-
-+ 2\zeta\omega_0 j\omega
-+ \omega_0^2}
-
+H(j\omega) = \frac{\omega_0^2}{(j\omega)^2 + 2\zeta\omega_0 j\omega + \omega_0^2}
 $$
 
 ---
